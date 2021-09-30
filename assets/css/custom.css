@@ -379,6 +379,15 @@ button#dropdownMenuButton {
   min-width: unset;
 }
 
+.main-header .dropdown-toggle:after {
+  top: 50%;
+  right: 0px;
+}
+
+input#demo {
+  padding: 14px 30px 12px 20px;
+}
+
 html[dir=rtl] .about-text {
   text-align: right;
 }
@@ -522,7 +531,9 @@ html[dir=rtl] .contact-section .form-section {
   text-align: right;
 }
 html[dir=rtl] .main-header .dropdown-toggle:after {
-  display: none;
+  top: 50%;
+  left: -6px;
+  right: unset;
 }
 html[dir=rtl] .main-header .dropdown-menu a {
   text-align: right;
