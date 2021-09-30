@@ -34,14 +34,14 @@ $(function () {
         }
     }
 
-    // $('#demo').daterangepicker({
-    //     "showCustomRangeLabel": false,
-    //     "alwaysShowCalendars": true,
-    //     "startDate": "09/15/2021",
-    //     "endDate": "09/21/2021"
-    // }, function(start, end, label) {
-    //   console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
-    // });
+    $('#demo').daterangepicker({
+        "showCustomRangeLabel": false,
+        "alwaysShowCalendars": true,
+        "startDate": "09/15/2021",
+        "endDate": "09/21/2021"
+    }, function(start, end, label) {
+      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')');
+    });
 
 
     // Made the left sidebar's min-height to window's height
