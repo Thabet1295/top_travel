@@ -1,0 +1,120 @@
+extend index
+block website_title 
+    title  Shop Cart 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 Shop Cart
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") Shop Cart
+    // Shop cart start
+    div(class="shop-cart content-area-17")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    div(class="heading-4")
+                        h4 Shopping Cart
+                        p Lorem ipsum dolor sit amet, consectetu radipisi
+                div(class="col-lg-8")
+                    table(class="shop-table cart")
+                        thead
+                            tr
+                                th(class="product-name t-600") Product
+                                th(class="description t-600") Description
+                                th(class="product-price t-600") Price
+                                th(class="product-quantity t-600") Qty
+                                th(class="product-subtotal t-600") Total
+                                th(class="product-remove") &amp;nbsp;
+                        tbody
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="assets/img/car/car-1.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor
+                                td(class="d_none") £58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td £58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="assets/img/car/car-2.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor
+                                td(class="d_none") £58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td £58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="assets/img/car/car-3.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor
+                                td(class="d_none") £58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td £58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="assets/img/car/car-4.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor
+                                td(class="d_none") £58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td £58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                            tr
+                                td(class="product-thumbnail")
+                                    img(src="assets/img/car/car-5.jpg", alt="img")
+                                td(class="product-name")
+                                    a(href="#") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac tortor
+                                td(class="d_none") £58.00
+                                td
+                                    input(class="qty", type="text", value="+1")
+                                td £58.00
+                                td(class="product-remove")
+                                    a(href="#")
+                                        i(class="fa fa-close")
+                div(class="col-lg-4")
+                    div(class="cart-total-box")
+                        h5 Cart Totals
+                        hr
+                        ul
+                            li
+                                | Subtotal
+                                span(class="pull-right") $170.00
+                            li
+                                | Shipping Charge
+                                span(class="pull-right") $234.00
+                            li
+                                | Local Delivery
+                                span(class="pull-right") $334
+                            li
+                                | Flat Rate
+                                span(class="pull-right") $1234
+                            li
+                                | International
+                                span(class="pull-right") $652
+                        hr
+                        p(class="mar-b-50")
+                            | Grand Total
+                            span(class="pull-right") $9531
+                        br
+                        button(class="btn btns-black btn-block btn-md", type="submit") Update Cart
+                        button(class="btn  btn-block btn-md button-theme", type="submit") Proceed To Checkout
+    // Shop cart end
+                    

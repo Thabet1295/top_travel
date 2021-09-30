@@ -1,0 +1,80 @@
+extend index
+block website_title 
+    title  Contact Us 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 Contact Us
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") Contact Us
+    div(class="contact-2 content-area-5")
+        div(class="container")
+
+
+            div(class="service-section content-area-2")
+                // Main title
+                div(class="main-title text-center")
+                    h1 Contact Us 
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                div(class="row")
+                    div(class="col-lg-4 col-md-6 col-sm-12")
+                        div(class="service-info-2")
+                            div(class="icon")
+                                i(class="lnr lnr-location")
+                            div(class="detail")
+                                h3 Location
+                                p  Egypt :Red sea , Hurghada Sgaeraton Road , El Hadaba , Building Nr. 9 Flat Nr. 8
+
+                    div(class="col-lg-4 col-md-6 col-sm-12")
+                        div(class="service-info-2")
+                            div(class="icon")
+                                i(class="lnr lnr-envelope")
+                            div(class="detail")
+                                h3 Email
+                                p info@topagencytravel.com
+
+                    div(class="col-lg-4 col-md-6 col-sm-12")
+                        div(class="service-info-2")
+                            div(class="icon")
+                                i(class="lnr lnr-phone")
+                            div(class="detail")
+                                h3 Phone
+                                p +201098563744
+
+            form(action="#", method="GET", enctype="multipart/form-data")
+                div(class="row")
+                    div(class="col-lg-12")
+                        div(class="row")
+                            div(class="col-md-6 text-left")
+                                div(class="form-group name")
+                                    input(type="text", name="name", class="form-control", placeholder="Name")
+                            div(class="col-md-6")
+                                div(class="form-group email")
+                                    input(type="email", name="email", class="form-control", placeholder="Email")
+                            div(class="col-md-6")
+                                div(class="form-group subject")
+                                    input(type="text", name="subject", class="form-control", placeholder="Subject")
+                            div(class="col-md-6")
+                                div(class="form-group number")
+                                    input(type="text", name="phone", class="form-control", placeholder="Number")
+                            div(class="col-md-12")
+                                div(class="form-group message")
+                                    textarea(class="form-control", name="message", placeholder="Write message")
+                            div(class="col-md-12")
+                                div(class="send-btn text-center")
+                                    button(type="submit", class="btn btn-5") Send Message
+
+        // Google map start
+    div(class="section")
+        div(class="map")
+            #map(class="contact-map")
+                iframe(src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3548.4727888435073!2d33.84212458452494!3d27.204302254024235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRed%20sea%20%2C%20Hurghada%20Sgaeraton%20Road%20%2C%20El%20Hadaba%20%2C%20Building%20Nr.%209%20Flat%20Nr.%208!5e0!3m2!1sar!2seg!4v1632753796854!5m2!1sar!2seg", width="100%", height="600", style="border:0;", allowfullscreen="", loading="lazy")
+
+    // Google map end
+
+
+
+

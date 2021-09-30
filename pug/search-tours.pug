@@ -1,0 +1,378 @@
+extend index
+block website_title 
+    title  Search Tours 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 Search Tours
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") Search Tours
+        // Featured car start
+    div(class="featured-car content-area")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-4 col-md-12")
+                    div(class="sidebar-right")
+                        // Advanced search start
+                        div(class="widget advanced-search2")
+                            h3(class="sidebar-title") Filter By
+                            div(class="s-border")
+                            div(class="m-border")
+                            form(method="GET")
+                                div(class="range-slider clearfix")
+                                    label Price
+                                    div(data-min="0", data-max="150000", data-min-name="min_price", data-max-name="max_price", data-unit="USD", class="range-slider-ui ui-slider", aria-disabled="false")
+                                a(class="show-more-options", data-toggle="collapse", data-target="#options-content")
+                                    i(class="fa fa-plus-circle")
+                                    | Tour Type
+                                #options-content(class="collapse show")
+                                    div(class="s-border")
+                                    div(class="m-border")
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox2(type="checkbox")
+                                        label(for="checkbox2")
+                                            | City trips
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox3(type="checkbox")
+                                        label(for="checkbox3")
+                                            | City trips
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox4(type="checkbox")
+                                        label(for="checkbox4")
+                                            | ElGouna
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox1(type="checkbox")
+                                        label(for="checkbox1")
+                                            | ElGouna
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox5(type="checkbox")
+                                        label(for="checkbox5")
+                                            | ElGouna
+                                a(class="show-more-options", data-toggle="collapse", data-target="#duartion-content")
+                                    i(class="fa fa-plus-circle")
+                                    | Duration
+                                #duartion-content(class="collapse show")
+                                    div(class="s-border")
+                                    div(class="m-border")
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox2(type="checkbox")
+                                        label(for="checkbox2")
+                                            | 0-3 hours
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox3(type="checkbox")
+                                        label(for="checkbox3")
+                                            | 0-3 hours
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox4(type="checkbox")
+                                        label(for="checkbox4")
+                                            | 0-3 hours
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox1(type="checkbox")
+                                        label(for="checkbox1")
+                                            | 0-3 hours
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox5(type="checkbox")
+                                        label(for="checkbox5")
+                                            | 0-3 hours
+                                a(class="show-more-options", data-toggle="collapse", data-target="#language-content")
+                                    i(class="fa fa-plus-circle")
+                                    | Language
+                                #language-content(class="collapse show")
+                                    div(class="s-border")
+                                    div(class="m-border")
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox2(type="checkbox")
+                                        label(for="checkbox2")
+                                            | Arabic
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox3(type="checkbox")
+                                        label(for="checkbox3")
+                                            | English
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox4(type="checkbox")
+                                        label(for="checkbox4")
+                                            | Arabic
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox1(type="checkbox")
+                                        label(for="checkbox1")
+                                            | English
+                                    div(class="checkbox checkbox-theme checkbox-circle")
+                                        input#checkbox5(type="checkbox")
+                                        label(for="checkbox5")
+                                            | Arabic                           
+                                div(class="form-group mb-0")
+                                    button(class="search-button btn") Search
+                        // Recent posts start
+
+                        div(class="widget question widget-3")
+                            h5(class="sidebar-title") Get a Question?
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul(class="contact-info")
+                                li
+                                    i(class="flaticon-pin")
+                                    | 20/F Green Road, Dhanmondi
+                                li
+                                    i(class="flaticon-mail")
+                                    a(href="mailto:info@themevessel.com") info@themevessel.com
+                                li
+                                    i(class="flaticon-phone")
+                                    a(href="tel:+0477-85x6-552") +0477 85x6 552
+                            div(class="social-list clearfix")
+                                ul
+                                    li
+                                        a(href="#", class="facebook-bg")
+                                            i(class="fa fa-facebook")
+                                    li
+                                        a(href="#", class="twitter-bg")
+                                            i(class="fa fa-twitter")
+                                    li
+                                        a(href="#", class="google-bg")
+                                            i(class="fa fa-google-plus")
+                                    li
+                                        a(href="#", class="rss-bg")
+                                            i(class="fa fa-rss")
+                                    li
+                                        a(href="#", class="linkedin-bg")
+                                            i(class="fa fa-linkedin")
+                div(class="col-lg-8 col-md-12")
+                    // Option bar start
+                    div(class="option-bar clearfix")
+                        div(class="row")
+                            div(class="col-lg-5 col-md-6 col-sm-12")
+                                div(class="sorting-options2")
+                                    h5 Showing 1-15 of 69 Listings
+                            div(class="col-lg-7 col-md-6 col-sm-12")
+                                div(class="sorting-options float-right")
+                                    a(href="carList.html", class="change-view-btn active-view-btn float-right")
+                                        i(class="fa fa-th-list")
+                                    a(href="carList.html", class="change-view-btn float-right")
+                                        i(class="fa fa-th-large")
+                                div(class="sorting-options-3 float-right")
+                                    select(class="selectpicker search-fields", name="default-order")
+                                        option Default Order
+                                        option Price High to Low
+                                        option Price: Low to High
+                                        option Newest Properties
+                                        option Oldest Properties
+                    // Car box 2 start
+                    div(class="row")
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00 
+                        div(class="col-md-6")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") Featured
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                | 4 Day
+                                            li
+                                                i(class="flaticon-way")
+                                                | Daily Tour
+                                            li
+                                                i(class="fa fa-users")
+                                                | unlimited
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="car-details.html")   Cairo and luxor by Flight    
+                                    div(class="location")
+                                        a(href="car-details.html")
+                                            i(class="flaticon-pin")
+                                            | Cairo Luxor
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 Reviews)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00                                                                           
+                    
+                    div(class="pagination-box p-box-2 text-center")
+                        nav(aria-label="Page navigation example")
+                            ul(class="pagination")
+                                li(class="page-item")
+                                    a(class="page-link", href="#")
+                                        i(class="fa fa-angle-left")
+                                li(class="page-item")
+                                    a(class="page-link active", href="#") 1
+                                li(class="page-item")
+                                    a(class="page-link", href="#") 2
+                                li(class="page-item")
+                                    a(class="page-link", href="#") 3
+                                li(class="page-item")
+                                    a(class="page-link", href="#")
+                                        i(class="fa fa-angle-right")
+
+    // Featured car start

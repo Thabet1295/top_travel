@@ -1,0 +1,610 @@
+extend index
+block website_title 
+    title  تفاصيل السيارة 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 تفاصيل السيارة
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") الرئيسية
+                    li(class="active") تفاصيل السيارة
+    div(class="car-details-page content-area-6")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-8 col-md-12 col-xs-12")
+                    div(class="car-details-section")
+                        // Heading start
+                        div(class="heading-car clearfix")
+                            div(class="pull-left")
+                                h3 Porsche Cayen Last
+                                h6
+                                    i(class="flaticon-pin")
+                                    | الرياض,
+                            div(class="pull-right")
+                                div(class="price-box-3")
+                                    sup ريال
+                                    | 650
+                                    span /الشهر
+                        // carDetailsSlider start
+                        #carDetailsSlider(class="carousel car-details-sliders slide slide-2")
+                            // main slider carousel items
+                            div(class="carousel-inner")
+                                div(class="active item carousel-item", data-slide-number="0")
+                                    img(src="../assets/img/car/car-5.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="1")
+                                    img(src="../assets/img/car/car-2.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="2")
+                                    img(src="../assets/img/car/car-3.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="4")
+                                    img(src="../assets/img/car/car-1.jpg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="5")
+                                    img(src="../assets/img/car/car-4.jpg", class="img-fluid", alt="slider-car")
+                            // main slider carousel nav controls
+                            ul(class="carousel-indicators car-properties list-inline nav nav-justified")
+                                li(class="list-inline-item active")
+                                    a#carousel-selector-0(class="selected", data-slide-to="0", data-target="#carDetailsSlider")
+                                        img(src="../assets/img/car/car-5.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-1(data-slide-to="1", data-target="#carDetailsSlider")
+                                        img(src="../assets/img/car/car-2.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-2(data-slide-to="2", data-target="#carDetailsSlider")
+                                        img(src="../assets/img/car/car-3.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-3(data-slide-to="3", data-target="#carDetailsSlider")
+                                        img(src="../assets/img/car/car-1.jpg", class="img-fluid", alt="small-car")
+                                li(class="list-inline-item")
+                                    a#carousel-selector-4(data-slide-to="4", data-target="#carDetailsSlider")
+                                        img(src="../assets/img/car/car-4.jpg", class="img-fluid", alt="small-car")
+                        // Advanced search start
+                        div(class="widget-2 advanced-search bg-grea-2 as-2")
+                            h3(class="sidebar-title") تفاصيل السيارة
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul
+                                li
+                                    span النوع
+                                    | Ferrari
+                                li
+                                    span الموديل 
+                                    | Maxima
+                                li
+                                    span الجودة
+                                    | Convertible
+                                li
+                                    span العام
+                                    | 2017
+                                li
+                                    span الحالة
+                                    | Brand New
+                                li
+                                    span السرعة
+                                    | 34,000 mi
+                                li
+                                    span اللون
+                                    | Dark Grey
+                                li
+                                    span السرعات
+                                    | 6-speed يدوي
+                                li
+                                    span المحرك
+                                    | 3.4L Mid-Engine V6
+                                li
+                                    span عدد الاطارات
+                                    | 5
+                                li
+                                    span المقر
+                                    | لندن
+                                li
+                                    span حالة المخزن
+                                    | Gasoline Fuel
+                        // Tabbing box start
+                        div(class="tabbing tabbing-box mb-40")
+                            ul#carTab(class="nav nav-tabs", role="tablist")
+                                li(class="nav-item")
+                                    a#one-tab(class="nav-link active show", data-toggle="tab", href="#one", role="tab", aria-controls="one", aria-selected="false") المواصفات
+                                li(class="nav-item")
+                                    a#two-tab(class="nav-link", data-toggle="tab", href="#two", role="tab", aria-controls="two", aria-selected="false") المميزات
+                                li(class="nav-item")
+                                    a#6-tab(class="nav-link", data-toggle="tab", href="#6", role="tab", aria-controls="6", aria-selected="true") الاطارات
+                                li(class="nav-item")
+                                    a#three-tab(class="nav-link", data-toggle="tab", href="#three", role="tab", aria-controls="three", aria-selected="true") السيارات المشابهة
+                                li(class="nav-item")
+                                    a#5-tab(class="nav-link", data-toggle="tab", href="#5", role="tab", aria-controls="5", aria-selected="true") المقر
+                                li(class="nav-item")
+                                    a#4-tab(class="nav-link", data-toggle="tab", href="#4", role="tab", aria-controls="4", aria-selected="true") الفيديو
+                            #carTabContent(class="tab-content")
+                                #one(class="tab-pane fade active show", role="tabpanel", aria-labelledby="one-tab")
+                                    div(class="car-description mb-50")
+                                        h3(class="heading-2")
+                                            | المواصفات
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                                        p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                                #two(class="tab-pane fade", role="tabpanel", aria-labelledby="two-tab")
+                                    div(class="features-info mb-50")
+                                        h3(class="heading-2") المميزات
+                                        div(class="row")
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | Adaptive Cruise Control
+                                                    li
+                                                        | Airbags
+                                                    li
+                                                        | Air Conditioning
+                                                    li
+                                                        | Alarm System
+                                                    li
+                                                        | Anti-theft Protection
+                                                    li
+                                                        | Audio Interface
+                                                    li
+                                                        | اوتوماتيك Climate Control
+                                                    li
+                                                        | اوتوماتيك Headlights
+                                                    li
+                                                        | Auto Start/Stop
+                                                    li
+                                                        | Bi-Xenon Headlights
+                                                    li
+                                                        | Audio Interface
+                                                    li
+                                                        | ازرقtooth Handset
+                                                    li
+                                                        | BOSE Surround Sound
+                                                    li
+                                                        | Burmester Surround Sound
+                                                    li
+                                                        | CD/DVD Autochanger
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | CDR Audio
+                                                    li
+                                                        | Cruise Control
+                                                    li
+                                                        | Direct Fuel Injection
+                                                    li
+                                                        | Electric Parking Brake
+                                                    li
+                                                        | Floor Mats
+                                                    li
+                                                        | Garage Door Opener
+                                                    li
+                                                        | Leather Package
+                                                    li
+                                                        | Locking Rear Differential
+                                                    li
+                                                        | Luggage Compartments
+                                                    li
+                                                        | يدوي Transmission
+                                                    li
+                                                        | Navigation Module
+                                                    li
+                                                        | Online Services
+                                                    li
+                                                        | ParkAssist
+                                                    li
+                                                        | Porsche Communication
+                                                    li
+                                                        | CD/DVD Autochanger
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul
+                                                    li
+                                                        | Power Steering
+                                                    li
+                                                        | Reversing Camera
+                                                    li
+                                                        | Roll-over Protection
+                                                    li
+                                                        | Seat Heating
+                                                    li
+                                                        | Seat Ventilation
+                                                    li
+                                                        | Sound Package Plus
+                                                    li
+                                                        | رياضي Chrono Package
+                                                    li
+                                                        | Steering Wheel Heating
+                                                    li
+                                                        | Tire Pressure Monitoring
+                                                    li
+                                                        | Universal Audio Interface
+                                                    li
+                                                        | Voice Control System
+                                                    li
+                                                        | Wind Deflector
+                                #three(class="tab-pane fade ", role="tabpanel", aria-labelledby="three-tab")
+                                    div(class="related-car mb-40")
+                                        h3(class="heading-2") السيارات المشابهة
+                                        div(class="row")
+                                            div(class="col-md-6")
+                                                div(class="car-box-3")
+                                                    div(class="car-thumbnail")
+                                                        a(href="car-details.html", class="car-img")
+                                                            div(class="for") للبيع 
+                                                            div(class="price-box")
+                                                                span(class="del")
+                                                                    del ريال950.00 
+                                                                br
+                                                                span ريال1050.00 
+                                                            img(class="d-block w-100", src="../assets/img/car/car-1.jpg", alt="car")
+                                                        div(class="carbox-overlap-wrapper")
+                                                            div(class="overlap-box")
+                                                                div(class="overlap-btns-area")
+                                                                    a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                                        i(class="fa fa-eye-slash")
+                                                                    a(class="overlap-btn wishlist-btn")
+                                                                        i(class="fa fa-heart-o")
+                                                                    a(class="overlap-btn compare-btn")
+                                                                        i(class="fa fa-balance-scale")
+                                                                    div(class="car-magnify-gallery")
+                                                                        a(href="../assets/img/car/car-1.jpg", class="overlap-btn", data-sub-html="<h4>Lamborghini</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            i(class="fa fa-expand")
+                                                                            img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-2.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                                    div(class="detail")
+                                                        h1(class="title")
+                                                            a(href="car-details.html") Lamborghini
+                                                        ul(class="custom-list")
+                                                            li
+                                                                a(href="#") جديدة
+                                                                | /
+                                                            li
+                                                                a(href="#") اوتوماتيك
+                                                                | /
+                                                            li
+                                                                a(href="#") رياضية
+                                                        ul(class="facilities-list clearfix")
+                                                            li
+                                                                i(class="flaticon-fuel")
+                                                                | بترول
+                                                            li
+                                                                i(class="flaticon-way")
+                                                                | 4,000 km
+                                                            li
+                                                                i(class="flaticon-يدوي-transmission")
+                                                                | يدوي
+                                                            li
+                                                                i(class="flaticon-car")
+                                                                | رياضي
+                                                            li
+                                                                i(class="flaticon-gear")
+                                                                | ازرق
+                                                            li
+                                                                i(class="flaticon-calendar-1")
+                                                                | 2019
+                                                    div(class="footer clearfix")
+                                                        div(class="pull-left ratings")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star-o")
+                                                            span (65 مراجعات)
+                                                        ul(class="pull-right icon")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-heart-o")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-share-square-o")
+                                            div(class="col-md-6")
+                                                div(class="car-box-3")
+                                                    div(class="car-thumbnail")
+                                                        a(href="car-details.html", class="car-img")
+                                                            div(class="tag-2 bg-active") Featured
+                                                            div(class="price-box")
+                                                                span(class="del")
+                                                                    del ريال805.00
+                                                                br
+                                                                span ريال780.00
+                                                            img(class="d-block w-100", src="../assets/img/car/car-2.jpg", alt="car")
+                                                        div(class="carbox-overlap-wrapper")
+                                                            div(class="overlap-box")
+                                                                div(class="overlap-btns-area")
+                                                                    a(class="overlap-btn", data-toggle="modal", data-target="#carOverviewModal")
+                                                                        i(class="fa fa-eye-slash")
+                                                                    a(class="overlap-btn wishlist-btn")
+                                                                        i(class="fa fa-heart-o")
+                                                                    a(class="overlap-btn compare-btn")
+                                                                        i(class="fa fa-balance-scale")
+                                                                    div(class="car-magnify-gallery")
+                                                                        a(href="../assets/img/car/car-2.jpg", class="overlap-btn", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            i(class="fa fa-expand")
+                                                                            img(class="hidden", src="../assets/img/car/car-2.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-1.jpg", class="hidden", data-sub-html="<h4>Ferrari Red Car</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-1.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-3.jpg", class="hidden", data-sub-html="<h4>Bmw e46 m3 Diski Serie</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-3.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-4.jpg", class="hidden", data-sub-html="<h4>Volkswagen Scirocco 2016</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-4.jpg", alt="hidden-img")
+                                                                        a(href="../assets/img/car/car-5.jpg", class="hidden", data-sub-html="<h4>Porsche Cayen Last</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy....</p>")
+                                                                            img(class="hidden", src="../assets/img/car/car-5.jpg", alt="hidden-img")
+                                                    div(class="detail")
+                                                        h1(class="title")
+                                                            a(href="car-details.html") Ferrari Red Car
+                                                        ul(class="custom-list")
+                                                            li
+                                                                a(href="#") جديدة
+                                                                | /
+                                                            li
+                                                                a(href="#") اوتوماتيك
+                                                                | /
+                                                            li
+                                                                a(href="#") رياضية
+                                                        ul(class="facilities-list clearfix")
+                                                            li
+                                                                i(class="flaticon-fuel")
+                                                                | بترول
+                                                            li
+                                                                i(class="flaticon-way")
+                                                                | 4,000 km
+                                                            li
+                                                                i(class="flaticon-يدوي-transmission")
+                                                                | يدوي
+                                                            li
+                                                                i(class="flaticon-car")
+                                                                | رياضي
+                                                            li
+                                                                i(class="flaticon-gear")
+                                                                | ازرق
+                                                            li
+                                                                i(class="flaticon-calendar-1")
+                                                                | 2019
+                                                    div(class="footer clearfix")
+                                                        div(class="pull-left ratings")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star")
+                                                            i(class="fa fa-star-o")
+                                                            span (65 مراجعات)
+                                                        ul(class="pull-right icon")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-heart-o")
+                                                            li
+                                                                a(href="#")
+                                                                    i(class="fa fa-share-square-o")
+                                #6(class="tab-pane fade ", role="tabpanel", aria-labelledby="6-tab")
+                                    div(class="car-amenities mb-30")
+                                        h3(class="heading-2") المواصفات
+                                        div(class="row")
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | أقصي سرعة: 270
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | نوع المخزن: Diesel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | السرعة: 35,200 KM
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | المحرك: 2901
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | البوابات: 4
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Drive Train: Front Wheel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Body Style: Sedan
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Year:2019
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Fuel Type: Diesel
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Interior Color: White
+                                            div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                                ul(class="amenities")
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Doors: 4
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Horse Power: 310
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Location: Florisa, USA
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Interior Color: Black
+                                                    li
+                                                        i(class="fa fa-check")
+                                                        | Security
+                                #5(class="tab-pane fade ", role="tabpanel", aria-labelledby="5-tab")
+                                    div(class="location mb-50")
+                                        div(class="map")
+                                            h3(class="heading-2") Location
+                                            #map(class="contact-map")
+                                #4(class="tab-pane fade ", role="tabpanel", aria-labelledby="4-tab")
+                                    div(class="inside-car mb-50")
+                                        h3(class="heading-2")
+                                            | Video
+                                        iframe(src="https://www.youtube.com/embed/V7IrnC9MISU", allowfullscreen="")
+                        // Heading 2
+                        h3(class="heading-2") التعليقات
+                        // Comments start
+                        //- ul(class="comments")
+                        //-     li
+                        //-         div(class="comment")
+                        //-             div(class="comment-author")
+                        //-                 a(href="#")
+                        //-                     img(src="../assets/img/avatar/avatar-11.jpg", alt="comments-user")
+                        //-             div(class="comment-content")
+                        //-                 div(class="comment-meta")
+                        //-                     h6
+                        //-                         | مالك محمد 
+                        //-                         span(class="float-right") 11/28/2021
+                        //-                             a(href="#") الرد 
+                        //-                 p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                        //-         ul
+                        //-             li
+                        //-                 div(class="comment")
+                        //-                     div(class="comment-author")
+                        //-                         a(href="#")
+                        //-                             img(src="../assets/img/avatar/avatar-12.jpg", alt="comments-user")
+                        //-                     div(class="comment-content")
+                        //-                         div(class="comment-meta")
+                        //-                             h6
+                        //-                                 | توفيق محمد 
+                        //-                                 span(class="float-right") 11/28/2021
+                        //-                                     a(href="#") الرد
+                        //-                         p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                        //-     li
+                        //-         div(class="comment")
+                        //-             div(class="comment-author")
+                        //-                 a(href="#")
+                        //-                     img(src="../assets/img/avatar/avatar-12.jpg", alt="comments-user")
+                        //-             div(class="comment-content")
+                        //-                 div(class="comment-meta")
+                        //-                     h6
+                        //-                         | محمد الجاصسمي
+                        //-                         span(class="float-right") 11/28/2021
+                        //-                             a(href="#") الرد
+                        //-                 p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                        //-         ul
+                        //-             li
+                        //-                 div(class="comment mb-50")
+                        //-                     div(class="comment-author")
+                        //-                         a(href="#")
+                        //-                             img(src="../assets/img/avatar/avatar-9.jpg", alt="comments-user")
+                        //-                     div(class="comment-content b-none")
+                        //-                         div(class="comment-meta")
+                        //-                             h6
+                        //-                                 | نادر محمد 
+                        //-                                 span(class="float-right") 11/28/2021
+                        //-                                     a(href="#") الرد
+                        //-                         p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما-
+                        // Contact 2 start
+                        div(class="contact-2 ca mb-50")
+                            h3(class="heading-2") تواصل معنا
+                            form(action="#", method="GET", enctype="multipart/form-data")
+                                div(class="row")
+                                    div(class="form-group name col-md-6")
+                                        input(type="text", name="name", class="form-control", placeholder="الاسم ")
+                                    div(class="form-group email col-md-6")
+                                        input(type="email", name="email", class="form-control", placeholder="البريد الالكتروني")
+                                    div(class="form-group number col-md-6")
+                                        input(type="text", name="phone", class="form-control", placeholder="رقم الهاتف")
+                                    div(class="form-group number col-md-6")
+                                        input(type="text", name="subject", class="form-control", placeholder="العنوان ")
+                                    div(class="form-group message col-md-12")
+                                        textarea(class="form-control", name="message", placeholder="رسالتك")
+                                    div(class="send-btn col-md-12")
+                                        button(type="submit", class="btn btn-5") ارسال رسالة
+                div(class="col-lg-4 col-md-12")
+                    div(class="sidebar-right")
+                        // Advanced search start
+                        div(class="widget advanced-search d-none-992")
+                            h3(class="sidebar-title") مواصفات السيارة
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul
+                                li
+                                    span النوع
+                                    | Ferrari
+                                li
+                                    span الموديل
+                                    | Maxima
+                                li
+                                    span حالة الجسم
+                                    | Convertible
+                                li
+                                    span السنة
+                                    | 2017
+                                li
+                                    span الحالة
+                                    | Brand New
+                                li
+                                    span السرعة
+                                    | 34,000 mi
+                                li
+                                    span اللون
+                                    | Dark Grey
+                                li
+                                    span السرعات
+                                    | 6-speed يدوي
+                                li
+                                    span المحرك
+                                    | 3.4L Mid-Engine V6
+                                li
+                                    span عدد الاطارات
+                                    | 5
+                                li
+                                    span المقر
+                                    | لندن
+                                li
+                                    span نوع المخزن
+                                    | Gasoline Fuel
+                        // Question start
+                        div(class="widget question widget-3")
+                            h5(class="sidebar-title") هل لديك استفسار
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul(class="contact-info")
+                                li
+                                    i(class="flaticon-pin")
+                                    | المملكة العربية السعودية
+                                li
+                                    i(class="flaticon-mail")
+                                    a(href="mailto:info@themevessel.com") info@themevessel.com
+                                li
+                                    i(class="flaticon-phone")
+                                    a(href="tel:+0477-85x6-552") +0477 85x6 552
+                            div(class="social-list clearfix")
+                                ul
+                                    li
+                                        a(href="#", class="facebook-bg")
+                                            i(class="fa fa-facebook")
+                                    li
+                                        a(href="#", class="twitter-bg")
+                                            i(class="fa fa-twitter")
+                                    li
+                                        a(href="#", class="google-bg")
+                                            i(class="fa fa-google-plus")
+                                    li
+                                        a(href="#", class="rss-bg")
+                                            i(class="fa fa-rss")
+                                    li
+                                        a(href="#", class="linkedin-bg")
+                                            i(class="fa fa-linkedin")
+                        // Financing calculator start
+                        div(class="contact-2 financing-calculator widget widget-3")
+                            h3(class="sidebar-title") الحاسبة
+                            div(class="s-border")
+                            div(class="m-border")
+                            form(action="#", method="GET", enctype="multipart/form-data")
+                                div(class="form-group")
+                                    label(class="form-label") السعر
+                                    input(type="text", class="form-control", placeholder="ريال24.400")
+                                div(class="form-group")
+                                    label(class="form-label") سعر الفائدة (٪)
+                                    input(type="text", class="form-control", placeholder="12%")
+                                div(class="form-group")
+                                    label(class="form-label") الفترة بالأشهر
+                                    input(type="text", class="form-control", placeholder="6 Months")
+                                div(class="form-group")
+                                    label(class="form-label") المبلغ
+                                    input(type="text", class="form-control", placeholder="ريال32,300")
+                                div(class="form-group mb-0")
+                                    button(type="submit", class="btn button-theme btn-md btn-block") احسب

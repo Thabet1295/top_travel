@@ -1,0 +1,603 @@
+doctype html
+html
+    head
+        block website_title
+            title topAgencytravel
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        include ./include/style
+    body
+        div(class="page_loader")
+        include ./include/header 
+        block index 
+            div(class="video-bg hidden-xs")
+                //- iframe#widget2(class="inner", frameborder="0", allowfullscreen="1", allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", title="YouTube video player", width="100%", height="100%", src="https://www.youtube.com/embed/nDY8WVSrGBU?controls=0&amp;start=2amp;disablekb=1&amp;autoplay=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;loop=1&amp;wmode=transparent&amp;origin=https%3A%2F%2Ftopagencytravel.com&amp;widgetid=1", style="max-width: 1000%; margin-left: 0px; margin-top: -360px; width: 1903px; height: 1070.44px;")
+            div(class="search-box-3 sb-7")
+                div(class="container")
+                    div(class="search-area-inner")
+                        div(class="search-contents")
+                            form(method="GET")
+                                div(class="row")
+                                    div(class="col-md-9")
+                                        div(class="row")
+                                            div(class="col-lg-3 col-md-6 col-sm-6 col-xs-12")
+                                                div(class="form-group")
+                                                    select(class="selectpicker search-fields", name="select-brand")
+                                                        option Select Destination 
+                                                        option Egypt
+                                                        option Freanca
+                                                        option England
+                                                        option Italia
+                                                        option KSA
+                                                        option Moraco
+                                            div(class="col-lg-3 col-md-6 col-sm-6 col-xs-12")
+                                                div(class="form-group")
+                                                    input#demo(type="text", class="form-control selectpicker search-fields")
+                                            div(class="col-lg-3 col-md-6 col-sm-6 col-xs-12")
+                                                div(class="form-group")
+                                                    select(class="selectpicker search-fields", name="select-make" multiple)
+                                                        option Tour Categories
+                                                        option City trips
+                                                        option Dahab
+                                                        option Ecotourism
+                                                        option El Gouan
+                                                        option City trips
+                                                        option Dahab
+                                                        option Ecotourism
+                                                        option El Gouan
+                                            div(class="col-lg-3 col-md-6 col-sm-6 col-xs-12")
+                                                div(class="form-group")
+                                                    div(class="range-slider")
+                                                        div(data-min="0", data-max="150000", data-unit="USD", data-min-name="min_price", data-max-name="max_price", class="range-slider-ui ui-slider", aria-disabled="false")            
+                                    div(class="col-lg-12")
+                                        div(class="form-group")
+                                            button(class="btn btn-block button-theme btn-md filter-button")
+                                                i(class="fa fa-search")
+                                                | Find
+
+            div(class="featured-car content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title")
+                        h1 Trending Tours
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    // Slick slider area start
+                    div(class="slick-slider-area")
+                        div(class="row slick-carousel", data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                            div(class="slick-slide-item")
+                                div(class="car-box")
+                                    div(class="car-image")
+                                        img(class="d-block w-100", src="assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                        div(class="tag") Featured
+                                        div(class="facilities-list clearfix")
+                                            ul
+                                                li
+                                                    i(class="flaticon-calendar-1")
+                                                    | 4 Day
+                                                li
+                                                    i(class="flaticon-way")
+                                                    | Daily Tour
+                                                li
+                                                    i(class="fa fa-users")
+                                                    | unlimited
+                                    div(class="detail")
+                                        h1(class="title")
+                                            a(href="car-details.html")   Cairo and luxor by Flight    
+                                        div(class="location")
+                                            a(href="car-details.html")
+                                                i(class="flaticon-pin")
+                                                | Cairo Luxor
+                                    div(class="footer clearfix")
+                                        div(class="pull-left ratings")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star")
+                                            i(class="fa fa-star-o")
+                                            span (65 Reviews)
+                                        div(class="pull-right")
+                                            p(class="price") $850.00
+                                
+                    
+                        div(class="slick-prev slick-arrow-buton")
+                            i(class="fa fa-angle-left")
+                        div(class="slick-next slick-arrow-buton")
+                            i(class="fa fa-angle-right")
+
+
+            div(class="service-section-3 content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title-2 text-center")
+                        h1 We Are The Best
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    div(class="row")
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="service-info-3")
+                                div(class="number") 1
+                                div(class="icon")
+                                    i(class="flaticon-shield")
+                                div(class="detail")
+                                    h5
+                                        a(href="services.html") Highly  Secured
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="service-info-3")
+                                div(class="number") 2
+                                div(class="icon")
+                                    i(class="flaticon-deal")
+                                div(class="detail")
+                                    h5
+                                        a(href="services.html") Trusted Agents
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="service-info-3")
+                                div(class="number") 3
+                                div(class="icon")
+                                    i(class="flaticon-money")
+                                div(class="detail")
+                                    h5
+                                        a(href="services.html") Get an Offer
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="service-info-3")
+                                div(class="number") 4
+                                div(class="icon")
+                                    i(class="flaticon-support-2")
+                                div(class="detail")
+                                    h5
+                                        a(href="services.html") Free Support
+                                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.
+
+                // Latest offers section strat
+            div(class="latest-offers-section content-area-13")
+                div(class="container")
+                    // Main title
+                    div(class="main-title text-center")
+                        h1 Top Destinations
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    div(class="row")
+                        div(class="col-lg-7 col-md-12 col-sm-12")
+                            div(class="row")
+                                div(class="col-md-6 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="assets/img/tours/aswan.jpeg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        | 6
+                                                        span Tours
+                                                    h3
+                                                        a(href="car-details.html") Aswan
+                                div(class="col-md-6 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="assets/img/tours/cairo.jpeg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        | 6
+                                                        span Tours
+                                                    h3(class="category-title")
+                                                        a(href="car-details.html") Cairo
+            
+                                div(class="col-md-12 col-sm-12 col-pad")
+                                    div(class="latest-offers-box")
+                                        div(class="latest-offers-box-inner")
+                                            div(class="latest-offers-box-overflow")
+                                                div(class="latest-offers-box-photo")
+                                                    img(class="img-fluid", src="assets/img/tours/dahab.jpg", alt="latest-offers")
+                                                div(class="info")
+                                                    div(class="price-box-2")
+                                                        | 6
+                                                        span Tours
+                                                    h3
+                                                        a(href="car-details.html") Dahab
+            
+                        div(class="col-lg-5 col-md-12 col-sm-12 col-pad")
+                            div(class="latest-offers-box")
+                                div(class="latest-offers-box-inner")
+                                    div(class="latest-offers-box-overflow")
+                                        div(class="latest-offers-box-photo")
+                                            div(class="latest-offers-box-photodd")
+                                                img(class="img-fluid big-img", src="assets/img/tours/luxor7.jpeg", alt="latest-offers")
+                                        div(class="info")
+                                            div(class="price-box-2")
+                                                | 6
+                                                span Tours
+                                            h3(class="category-title")
+                                                a(href="car-details.html") Luxor
+
+            // Latest offers section end
+
+            // Counters strat
+            div(class="counters-1")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-support")
+                                h1(class="counter") 967
+                                h5 local  
+                                    span guides
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-blog")
+                                h1(class="counter") 1276
+                                h5 Handcrafted 
+                                    span experiences
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-user")
+                                h1(class="counter") 96%  
+                                h5 Happy 
+                                    span travelers
+                        div(class="col-lg-3 col-md-6 col-sm-6")
+                            div(class="counter-box-1")
+                                i(class="flaticon-medal")
+                                h1(class="counter") 177
+                                h5  award 
+                                    span winning
+            // Counters end
+        
+            // Testimonial start
+            div(class="testimonial-4 content-area-5")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-lg-12")
+                            // Main title
+                            div(class="main-title")
+                                h1 Our Testimonial
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+                        div(class="col-lg-12")
+                            // Slick slider area start
+                            div(class="slick-slider-area")
+                                div(class="row slick-carousel", data-slick='{"slidesToShow": 2, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-info")
+                                            div(class="user-section")
+                                                div(class="user-thumb")
+                                                    img(src="assets/img/avatar/avatar-1.png", alt="testimonial")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                                div(class="user-name")
+                                                    h5 Michelle Nelson
+                                                    p Consultant
+                                            div(class="text")
+                                                p &quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-info")
+                                            div(class="user-section")
+                                                div(class="user-thumb")
+                                                    img(src="assets/img/avatar/avatar-2.png", alt="testimonial")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                                div(class="user-name")
+                                                    h5 Anne Brady
+                                                    p Web Designer, Uk
+                                            div(class="text")
+                                                p &quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;
+                                    div(class="slick-slide-item")
+                                        div(class="testimonial-info")
+                                            div(class="user-section")
+                                                div(class="user-thumb")
+                                                    img(src="assets/img/avatar/avatar-3.png", alt="testimonial")
+                                                    div(class="icon")
+                                                        i(class="fa fa-quote-right")
+                                                div(class="user-name")
+                                                    h5 Carolyn Stone
+                                                    p Designer
+                                            div(class="text")
+                                                p &quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;
+            // Testimonial end
+
+            // Blog start
+            div(class="blog content-area")
+                div(class="container")
+                    // Main title
+                    div(class="main-title")
+                        h1 Our News
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    // Slick slider area start
+                    div(class="slick-slider-area clearfix")
+                        div(class="row slick-carousel", data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                            div(class="slick-slide-item")
+                                div(class="blog-1")
+                                    div(class="blog-image")
+                                        img(src="assets/img/blog/blog-1.png", alt="blog-1", class="img-fluid bp")
+                                        div(class="date-box")
+                                            span 21
+                                            | Feb
+                                        div(class="profile-user")
+                                            img(src="assets/img/avatar/avatar-1.png", alt="user")
+                                    div(class="detail")
+                                        div(class="post-meta clearfix")
+                                            ul
+                                                li
+                                                    strong
+                                                        a(href="#") Maria Blank
+                                                li(class="float-right mr-0")
+                                                    a(href="#")
+                                                        i(class="flaticon-comment")
+                                                    | 17K
+                                                li(class="float-right")
+                                                    a(href="#")
+                                                        i(class="flaticon-calendar")
+                                                    | 73k
+                                        h4
+                                            a(href="blog-details.html") Selling Your Real House
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+                            div(class="slick-slide-item")
+                                div(class="blog-1")
+                                    div(class="blog-image")
+                                        img(src="assets/img/blog/blog-3.png", alt="blog-1", class="img-fluid")
+                                        div(class="date-box")
+                                            span 27
+                                            | Feb
+                                        div(class="profile-user")
+                                            img(src="assets/img/avatar/avatar-2.png", alt="user")
+                                    div(class="detail")
+                                        div(class="post-meta clearfix")
+                                            ul
+                                                li
+                                                    strong
+                                                        a(href="#") Brandon Miller
+                                                li(class="float-right mr-0")
+                                                    a(href="#")
+                                                        i(class="flaticon-comment")
+                                                    | 17K
+                                                li(class="float-right")
+                                                    a(href="#")
+                                                        i(class="flaticon-calendar")
+                                                    | 73k
+                                        h4
+                                            a(href="blog-details.html") Find Your Dream Car
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+                            div(class="slick-slide-item")
+                                div(class="blog-1")
+                                    div(class="blog-image")
+                                        img(src="assets/img/blog/blog-1.png", alt="blog-1", class="img-fluid")
+                                        div(class="date-box")
+                                            span 25
+                                            | Feb
+                                        div(class="profile-user")
+                                            img(src="assets/img/avatar/avatar-3.png", alt="user")
+                                    div(class="detail")
+                                        div(class="post-meta clearfix")
+                                            ul
+                                                li
+                                                    strong
+                                                        a(href="#") Karen Paran
+                                                li(class="float-right mr-0")
+                                                    a(href="#")
+                                                        i(class="flaticon-comment")
+                                                    | 17K
+                                                li(class="float-right")
+                                                    a(href="#")
+                                                        i(class="flaticon-calendar")
+                                                    | 73k
+                                        h4
+                                            a(href="blog-details.html") Buying a Best Sports Car
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+                            div(class="slick-slide-item")
+                                div(class="blog-1")
+                                    div(class="blog-image")
+                                        img(src="assets/img/blog/blog-1.png", alt="blog-1", class="img-fluid")
+                                        div(class="date-box")
+                                            span 14
+                                            | Nov
+                                        div(class="profile-user")
+                                            img(src="assets/img/avatar/avatar-4.png", alt="user")
+                                    div(class="detail")
+                                        div(class="post-meta clearfix")
+                                            ul
+                                                li
+                                                    strong
+                                                        a(href="#") Karen Paran
+                                                li(class="float-right mr-0")
+                                                    a(href="#")
+                                                        i(class="flaticon-comment")
+                                                    | 17K
+                                                li(class="float-right")
+                                                    a(href="#")
+                                                        i(class="flaticon-calendar")
+                                                    | 73k
+                                        h4
+                                            a(href="blog-details.html") Buying a Best Sports Car
+                                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry
+            // Blog end
+        
+
+            div(class="partners")
+                div(class="container")
+                    div(class="slick-slider-area")
+                        div(class="row slick-carousel", data-slick='{"slidesToShow": 5,"autoplay":true,"autoplaySpeed":2000,"responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 3}}, {"breakpoint": 768,"settings":{"slidesToShow": 2}}]}')
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-1.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-2.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-3.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-4.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-1.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-2.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-3.png", alt="brand", class="img-fluid")
+                            div(class="slick-slide-item")
+                                img(src="assets/img/brand/brand-4.png", alt="brand", class="img-fluid")
+            // Partners end
+
+    include ./include/footer
+    include ./include/script
+

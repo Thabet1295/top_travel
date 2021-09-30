@@ -1,0 +1,209 @@
+// Top header start
+header#top-header-2(class="top-header bg-active")
+    div(class="container")
+        div(class="row")
+            div(class="col-lg-6 col-md-8 col-sm-7")
+                div(class="list-inline")
+                    a(href="#")
+                        i(class="fa fa-facebook")  
+                    a(href="#")
+                        i(class="fa fa-twitter")  
+                    a(href="#")
+                        i(class="fa fa-linkedin")   
+                    a(href="tel:1-8X0-666-8X88")
+                        i(class="fa fa-phone")
+                        | Need Support? 1-8X0-666-8X88
+                    a(href="tel:info@topagencytravel.com")
+                        i(class="fa fa-envelope")
+                        | info@topagencytravel.com
+
+            div(class="col-lg-6 col-md-4 col-sm-5")
+                ul(class="top-social-media register-login-model pull-right")
+                    li
+                        a(href="#login", class="nav-link", data-toggle="modal")
+                            i(class="fa fa-sign-in")
+                            | Login
+                    li
+                        a(href="#register", class="nav-link", data-toggle="modal")
+                            i(class="fa fa-user-plus")
+                            | Register
+                    // Login Modal
+                #login(class="modal fade")
+                    div(class="modal-dialog modal-dialog-centered", role="document")
+                        div(class="modal-content form-wrapper")
+                            div(class="close-box", data-dismiss="modal")
+                                i(class="fa fa-times fa-2x")
+                            div(class="container-fluid mt-5")
+                                form#LoginForm( method="get")
+                                    div(class="form-group text-center")
+                                        h4 Login Form
+                                    div(class="form-group ", style="position: relative;")
+                                        label(for="l_email" class="d-flex") 
+                                            input(type="email", id="l_email", class="form-control", placeholder="username", required)
+                                            i(class="fa fa-envelope", aria-hidden="true")
+                                    div(class="form-group pb-3", style="position: relative;")
+                                        label(for="l_password" class="d-flex") 
+                                            input(type="password", id="l_password", class="form-control", placeholder="Pawswword ?", required)
+                                            i(class="fa fa-unlock-alt", aria-hidden="true")
+                                        a(href="#forgotPassword", style="display:block; position: absolute; right: 0;", title="Fill Email Field and Click it")
+                                            | Forgot Password?
+                                    div(class="form-group pt-2")
+                                        button(class="btn btn-info form-control") Login
+                                    div(class="text-center pt-2 social-login")
+                                        h6 OR Continue with
+                                        a(href="#", class="google")
+                                            i(class="fa fa-google-plus fa-lg")
+                                        a(href="#", class="facebook")
+                                            i(class="fa fa-facebook fa-lg")
+                                        a(href="#", class="twitter")
+                                            i(class="fa fa-twitter fa-lg")
+                                        a(href="#", class="github")
+                                            i(class="fa fa-github fa-lg")
+                                        // Registeration Modal
+                #register(class="modal fade")
+                    div(class="modal-dialog modal-dialog-centered", role="document")
+                        div(class="modal-content form-wrapper")
+                            div(class="close-box", data-dismiss="modal")
+                                i(class="fa fa-times fa-2x")
+                            div(class="container-fluid mt-5")
+                                form#RegisterationForm(action="#", method="post")
+                                    div(class="form-group text-center pb-2")
+                                        h4 Registration Form
+                                    
+                                    div(class="form-group ", style="position: relative;")
+                                        label(for="l_user" class="d-flex") 
+                                            input(type="text", id="l_user", class="form-control", placeholder="username", required)
+                                            i(class="fa fa-user", aria-hidden="true")
+                                    div(class="form-group", style="position: relative;")
+                                        label(for="l_email" class="d-flex") 
+                                            input(type="email", id="l_email", class="form-control", placeholder="Email", required)
+                                            i(class="fa fa-envelope", aria-hidden="true")
+                                    div(class="form-group", style="position: relative;")
+                                        label(for="l_password" class="d-flex") 
+                                            input(type="password", id="l_password", class="form-control", placeholder="Pawswword ?", required)
+                                            i(class="fa fa-unlock-alt", aria-hidden="true")
+                                    div(class="form-group pb-3", style="position: relative;")
+                                        label(for="l_cpassowrd" class="d-flex") 
+                                            input(type="cpassword", id="l_cpassowrd", class="form-control", placeholder="Confirm Password", required)
+                                            i(class="fa fa-unlock-alt", aria-hidden="true")        
+
+                                    //- div(class="form-group col-6", style="position:relative;")
+                                    //-     label(for="photo_upload", style="display:block") Profile Picture
+                                    //-     button(type="button", class="btn btn-dark form-control", onclick="document.getElementById('photo_upload').click()", id="photo_btn") Select Image
+                                    //-     input(type="file", name="photo", id="photo_upload", accept="image/*", style="display:none;", required)
+                                    a(href="#", data-toggle="modal", data-target="#login", style="display:none; position: absolute; right: 0; font-size: 12px;") That&apos; | | you? Login
+
+                                    div(class="form-group")
+                                        button(class="btn btn-info form-control") Register
+
+// Top header end
+// Main header start
+header(class="main-header  sh-2")
+    div(class="container")
+        nav(class="navbar navbar-expand-lg navbar-light")
+            a(class="navbar-brand company-logo-2", href="index.html")
+                img(src="assets/img/logos/Logo-Top-Agency-Travel-1.png", alt="logo")
+            button#drawer(class="navbar-toggler", type="button")
+                span(class="fa fa-bars")
+            #navbar(class="navbar-collapse collapse w-100")
+                ul(class="navbar-nav ml-auto")
+                    li(class="nav-item dropdown")
+                        a(class="nav-link", href="index.html") Home
+                    li(class="nav-item dropdown")
+                        a(class="nav-link", href="about.html") About                       
+                    li(class="nav-item dropdown")
+                        a(class="nav-link", href="search-tours.html") Tours     
+                    li(class="nav-item dropdown")
+                        a(class="nav-link", href="tour-page.html") Tour Details           
+                    li(class="nav-item dropdown")
+                        a(class="nav-link", href="contact.html") conact us            
+                    //- li(class="nav-item dropdown")
+                    //-     a(class="nav-link", href="shop-checkout.html") Checkout
+                    li(class="nav-item dropdown active")
+                        a#navbarDropdownMenuLink(class="nav-link dropdown-toggle", href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+                            | Language
+                        ul(class="dropdown-menu", aria-labelledby="navbarDropdownMenuLink")
+                            li
+                                a(class="dropdown-item", href="index.html") English 
+                            li
+                                a(class="dropdown-item", href="arabic/index.html") العربية    
+                ul(class="navbar-nav ml-auto") 
+                    li(class="nav-item dropdown")
+                        a(href="#full-page-search", class="nav-link h-icon")
+                            i(class="fa fa-search")
+                    li(class="nav-item dropdown" href="#"  data-toggle="dropdown-cart" role="button" aria-expanded="false")
+                        button#dropdownMenuButton(class="nav-link h-icon", type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+                            i(class="fa fa-shopping-cart")
+                            span(class="count-number") 5  
+                        div(class="dropdown-menu dropdown-cart" role="menu" style="width:250px")
+                            div(class="card")
+                                div(class="card-body") 
+                                    h1(class="card-heading") Your Cart
+                                    div(class="card-item")
+                                        div(class="media")
+                                            div(class="media-image")
+                                                img(src="https://topagencytravel.com/wp-content/uploads/2020/03/ytrrrr-1-70x70.jpg")
+                                            div(class="media-info")
+                                                h5 4 days to egypt 
+                                                div(class="price") price 
+                                                    span(class="price-span") 10.000 $
+                                            a(class="card-delete" href="#")
+                                                i(class="fa fa-trash")
+                                    div(class="card-total")
+                                        div(class="price") price 
+                                            span(class="price-span") 10.000 $
+                                        a(href="shop-checkout.html" class="btn btn-block btn-default")  Checkout
+
+                                    
+
+// Main header end
+nav#sidebar(class="nav-sidebar")
+    // Close btn
+    #dismiss
+        i(class="fa fa-close")
+    div(class="sidebar-inner")
+        div(class="sidebar-logo")
+            a(href="index.html")
+                img(src="assets/img/logos/Logo-Top-Agency-Travel-1.png", alt="sidebarlogo")
+        div(class="sidebar-navigation")
+            ul(class="menu-list")
+                li(class="nav-item dropdown")
+                    a(class="nav-link", href="index.html") Home
+                li(class="nav-item dropdown")
+                    a(class="nav-link", href="about.html") About                       
+                li(class="nav-item dropdown")
+                    a(class="nav-link", href="search-tours.html") Tours     
+                li(class="nav-item dropdown")
+                    a(class="nav-link", href="tour-page.html") Tour Details           
+                li(class="nav-item dropdown")
+                    a(class="nav-link", href="contact.html") contact us  
+                li(class="nav-item dropdown active")
+                    a#navbarDropdownMenuLink(class="nav-link dropdown-toggle", href="#", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+                        | Language
+                    ul(class="dropdown-menu", aria-labelledby="navbarDropdownMenuLink")
+                        li
+                            a(class="dropdown-item", href="arabic/index.html") العربية  
+        div(class="get-in-touch")
+            h3(class="heading") Get in Touch
+            div(class="media")
+                i(class="flaticon-phone")
+                div(class="media-body")
+                    a(href="tel:0477-0477-8556-552") 0477 8556 552
+            div(class="media")
+                i(class="flaticon-mail")
+                div(class="media-body")
+                    a(href="#") info@themevessel.com
+            div(class="media mb-0")
+                i(class="flaticon-earth")
+                div(class="media-body")
+                    a(href="#") info@themevessel.com
+        div(class="get-social")
+            h3(class="heading") Get Social
+            a(href="#", class="facebook-bg")
+                i(class="fa fa-facebook")
+            a(href="#", class="twitter-bg")
+                i(class="fa fa-twitter")
+            a(href="#", class="google-bg")
+                i(class="fa fa-google")
+            a(href="#", class="linkedin-bg")
+                i(class="fa fa-linkedin")

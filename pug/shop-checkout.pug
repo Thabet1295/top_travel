@@ -1,0 +1,91 @@
+extend index
+block website_title 
+    title  Shop Checkout 
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 Shop Checkout
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") Home
+                    li(class="active") Shop Checkout
+    div(class="shop-checkout content-area-5")
+        div(class="container")
+            div(class="from-checkout")
+                div(class="row")
+                    div(class="col-lg-6 col-md-12")
+                        div(class="heading-4")
+                            h4 Billing Address
+                        form(action="#", method="GET", enctype="multipart/form-data")
+                            div(class="row")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="First Name")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="Last Name")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="Company Name")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="Address")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="Town / City")
+                            div(class="form-group")
+                                input(type="text", class="form-control", placeholder="State / Country")
+                            div(class="row")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="Post Code")
+                                div(class="col-md-6")
+                                    div(class="form-group")
+                                        input(type="text", class="form-control", placeholder="Phone")
+                        br
+                    div(class="col-lg-6 col-md-12")
+                        div(class="cart-total-box")
+                            h5 Cart Totals
+                            hr
+                            ul
+                                li
+                                    | Subtotal
+                                    span(class="pull-right") $170.00
+                                li
+                                    | Shipping Charge
+                                    span(class="pull-right") $234.00
+                                li
+                                    | Local Delivery
+                                    span(class="pull-right") $334
+                                li
+                                    | Flat Rate
+                                    span(class="pull-right") $1234
+                                li
+                                    | International
+                                    span(class="pull-right") $652
+                            hr
+                            p(class="mar-b-50")
+                                | Grand Total
+                                span(class="pull-right") $9531
+                            br
+                            button(class="btn btns-black btn-block btn-md", type="submit") Update Cart
+                            button(class="btn  btn-block btn-md button-theme", type="submit") Proceed To Checkout
+                        br
+                div(class="row")
+                    div(class="col-lg-6 col-md-12")
+                        div(class="our-payment")
+                            div(class="payment-box mb-40")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | Direct Bank Transfer
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            div(class="payment-box mb-40")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | Direct Bank Transfer
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            div(class="payment-box mb-0")
+                                label(class="form-check-label")
+                                    input(type="checkbox", class="form-check-input")
+                                    | Direct Bank Transfer
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    
+                    

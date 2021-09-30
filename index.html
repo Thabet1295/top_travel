@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>topAgencytravel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-submenu.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/fonts/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="assets/fonts/linearicons/style.css" rel="stylesheet">
+    <link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="assets/css/dropzone.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
+    <link href="assets/css/jnoty.css" rel="stylesheet">
+    <link href="assets/css/sidebar.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/skins/default.css" id="style_sheet" rel="stylesheet">
+    <link href="assets/css/custom.css" id="style_sheet" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
+    <div class="page_loader"></div>
+    <!-- Top header start-->
+    <header class="top-header bg-active" id="top-header-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-7">
+            <div class="list-inline"><a href="#"><i class="fa fa-facebook"> </i></a><a href="#"><i class="fa fa-twitter"> </i></a><a href="#"><i class="fa fa-linkedin">  </i></a><a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Need Support? 1-8X0-666-8X88</a><a href="tel:info@topagencytravel.com"><i class="fa fa-envelope"></i>info@topagencytravel.com</a></div>
+          </div>
+          <div class="col-lg-6 col-md-4 col-sm-5">
+            <ul class="top-social-media register-login-model pull-right">
+              <li><a class="nav-link" href="#login" data-toggle="modal"><i class="fa fa-sign-in"></i>Login</a></li>
+              <li><a class="nav-link" href="#register" data-toggle="modal"><i class="fa fa-user-plus"></i>Register</a></li>
+              <!-- Login Modal-->
+            </ul>
+            <div class="modal fade" id="login">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content form-wrapper">
+                  <div class="close-box" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></div>
+                  <div class="container-fluid mt-5">
+                    <form id="LoginForm" method="get">
+                      <div class="form-group text-center">
+                        <h4>Login Form</h4>
+                      </div>
+                      <div class="form-group " style="position: relative;">
+                        <label class="d-flex" for="l_email"> 
+                          <input class="form-control" type="email" id="l_email" placeholder="username" required><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group pb-3" style="position: relative;">
+                        <label class="d-flex" for="l_password"> 
+                          <input class="form-control" type="password" id="l_password" placeholder="Pawswword ?" required><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </label><a href="#forgotPassword" style="display:block; position: absolute; right: 0;" title="Fill Email Field and Click it">Forgot Password?</a>
+                      </div>
+                      <div class="form-group pt-2">
+                        <button class="btn btn-info form-control">Login</button>
+                      </div>
+                      <div class="text-center pt-2 social-login">
+                        <h6>OR Continue with</h6><a class="google" href="#"><i class="fa fa-google-plus fa-lg"></i></a><a class="facebook" href="#"><i class="fa fa-facebook fa-lg"></i></a><a class="twitter" href="#"><i class="fa fa-twitter fa-lg"></i></a><a class="github" href="#"><i class="fa fa-github fa-lg"></i></a>
+                        <!-- Registeration Modal-->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="register">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content form-wrapper">
+                  <div class="close-box" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></div>
+                  <div class="container-fluid mt-5">
+                    <form id="RegisterationForm" action="#" method="post">
+                      <div class="form-group text-center pb-2">
+                        <h4>Registration Form</h4>
+                      </div>
+                      <div class="form-group " style="position: relative;">
+                        <label class="d-flex" for="l_user"> 
+                          <input class="form-control" type="text" id="l_user" placeholder="username" required><i class="fa fa-user" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group" style="position: relative;">
+                        <label class="d-flex" for="l_email"> 
+                          <input class="form-control" type="email" id="l_email" placeholder="Email" required><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group" style="position: relative;">
+                        <label class="d-flex" for="l_password"> 
+                          <input class="form-control" type="password" id="l_password" placeholder="Pawswword ?" required><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group pb-3" style="position: relative;">
+                        <label class="d-flex" for="l_cpassowrd"> 
+                          <input class="form-control" type="cpassword" id="l_cpassowrd" placeholder="Confirm Password" required><i class="fa fa-unlock-alt" aria-hidden="true">       </i>
+                        </label>
+                      </div><a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That&apos; | | you? Login</a>
+                      <div class="form-group">
+                        <button class="btn btn-info form-control">Register</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Top header end-->
+    <!-- Main header start-->
+    <header class="main-header  sh-2">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand company-logo-2" href="index.html"><img src="assets/img/logos/Logo-Top-Agency-Travel-1.png" alt="logo"></a>
+          <button class="navbar-toggler" id="drawer" type="button"><span class="fa fa-bars"></span></button>
+          <div class="navbar-collapse collapse w-100" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="about.html">About                       </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="search-tours.html">Tours     </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="tour-page.html">Tour Details           </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="contact.html">conact us            </a></li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">English </a></li>
+                  <li><a class="dropdown-item" href="arabic/index.html">العربية    </a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item dropdown"><a class="nav-link h-icon" href="#full-page-search"><i class="fa fa-search"></i></a></li>
+              <li class="nav-item dropdown" href="#" data-toggle="dropdown-cart" role="button" aria-expanded="false">
+                <button class="nav-link h-icon" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i><span class="count-number">5  </span></button>
+                <div class="dropdown-menu dropdown-cart" role="menu" style="width:250px">
+                  <div class="card">
+                    <div class="card-body"> 
+                      <h1 class="card-heading">Your Cart</h1>
+                      <div class="card-item">
+                        <div class="media">
+                          <div class="media-image"><img src="https://topagencytravel.com/wp-content/uploads/2020/03/ytrrrr-1-70x70.jpg"></div>
+                          <div class="media-info">
+                            <h5>4 days to egypt </h5>
+                            <div class="price">price <span class="price-span">10.000 $</span></div>
+                          </div><a class="card-delete" href="#"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                      <div class="card-total">
+                        <div class="price">price <span class="price-span">10.000 $</span></div><a class="btn btn-block btn-default" href="shop-checkout.html"> Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Main header end-->
+    <nav class="nav-sidebar" id="sidebar">
+      <!-- Close btn-->
+      <div id="dismiss"><i class="fa fa-close"></i></div>
+      <div class="sidebar-inner">
+        <div class="sidebar-logo"><a href="index.html"><img src="assets/img/logos/Logo-Top-Agency-Travel-1.png" alt="sidebarlogo"></a></div>
+        <div class="sidebar-navigation">
+          <ul class="menu-list">
+            <li class="nav-item dropdown"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="about.html">About                       </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="search-tours.html">Tours     </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="tour-page.html">Tour Details           </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="contact.html">contact us  </a></li>
+            <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="arabic/index.html">العربية  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="get-in-touch">
+          <h3 class="heading">Get in Touch</h3>
+          <div class="media"><i class="flaticon-phone"></i>
+            <div class="media-body"><a href="tel:0477-0477-8556-552">0477 8556 552</a></div>
+          </div>
+          <div class="media"><i class="flaticon-mail"></i>
+            <div class="media-body"><a href="#">info@themevessel.com</a></div>
+          </div>
+          <div class="media mb-0"><i class="flaticon-earth"></i>
+            <div class="media-body"><a href="#">info@themevessel.com</a></div>
+          </div>
+        </div>
+        <div class="get-social">
+          <h3 class="heading">Get Social</h3><a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a><a class="twitter-bg" href="#"><i class="fa fa-twitter"></i></a><a class="google-bg" href="#"><i class="fa fa-google"></i></a><a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="video-bg hidden-xs"></div>
+    <div class="search-box-3 sb-7">
+      <div class="container">
+        <div class="search-area-inner">
+          <div class="search-contents">
+            <form method="GET">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <select class="selectpicker search-fields" name="select-brand">
+                          <option>Select Destination </option>
+                          <option>Egypt</option>
+                          <option>Freanca</option>
+                          <option>England</option>
+                          <option>Italia</option>
+                          <option>KSA</option>
+                          <option>Moraco</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <input class="form-control selectpicker search-fields" id="demo" type="text">
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <select class="selectpicker search-fields" name="select-make" multiple>
+                          <option>Tour Categories</option>
+                          <option>City trips</option>
+                          <option>Dahab</option>
+                          <option>Ecotourism</option>
+                          <option>El Gouan</option>
+                          <option>City trips</option>
+                          <option>Dahab</option>
+                          <option>Ecotourism</option>
+                          <option>El Gouan</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                      <div class="form-group">
+                        <div class="range-slider">
+                          <div class="range-slider-ui ui-slider" data-min="0" data-max="150000" data-unit="USD" data-min-name="min_price" data-max-name="max_price" aria-disabled="false">           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="form-group">
+                    <button class="btn btn-block button-theme btn-md filter-button"><i class="fa fa-search"></i>Find</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="featured-car content-area">
+      <div class="container">
+        <!-- Main title-->
+        <div class="main-title">
+          <h1>Trending Tours</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Slick slider area start-->
+        <div class="slick-slider-area">
+          <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 3, &quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 1}}]}">
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="car-box">
+                <div class="car-image"><img class="d-block w-100" src="assets/img/tours/luxor7.jpeg" alt="car-photo">
+                  <div class="tag">Featured</div>
+                  <div class="facilities-list clearfix">
+                    <ul>
+                      <li><i class="flaticon-calendar-1"></i>4 Day</li>
+                      <li><i class="flaticon-way"></i>Daily Tour</li>
+                      <li><i class="fa fa-users"></i>unlimited</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="detail">
+                  <h1 class="title"><a href="car-details.html">  Cairo and luxor by Flight    </a></h1>
+                  <div class="location"><a href="car-details.html"><i class="flaticon-pin"></i>Cairo Luxor</a></div>
+                </div>
+                <div class="footer clearfix">
+                  <div class="pull-left ratings"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><span>(65 Reviews)</span></div>
+                  <div class="pull-right">
+                    <p class="price">$850.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slick-prev slick-arrow-buton"><i class="fa fa-angle-left"></i></div>
+          <div class="slick-next slick-arrow-buton"><i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+    </div>
+    <div class="service-section-3 content-area">
+      <div class="container">
+        <!-- Main title-->
+        <div class="main-title-2 text-center">
+          <h1>We Are The Best</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="service-info-3">
+              <div class="number">1</div>
+              <div class="icon"><i class="flaticon-shield"></i></div>
+              <div class="detail">
+                <h5><a href="services.html">Highly  Secured</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="service-info-3">
+              <div class="number">2</div>
+              <div class="icon"><i class="flaticon-deal"></i></div>
+              <div class="detail">
+                <h5><a href="services.html">Trusted Agents</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="service-info-3">
+              <div class="number">3</div>
+              <div class="icon"><i class="flaticon-money"></i></div>
+              <div class="detail">
+                <h5><a href="services.html">Get an Offer</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="service-info-3">
+              <div class="number">4</div>
+              <div class="icon"><i class="flaticon-support-2"></i></div>
+              <div class="detail">
+                <h5><a href="services.html">Free Support</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Latest offers section strat-->
+    </div>
+    <div class="latest-offers-section content-area-13">
+      <div class="container">
+        <!-- Main title-->
+        <div class="main-title text-center">
+          <h1>Top Destinations</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 col-pad">
+                <div class="latest-offers-box">
+                  <div class="latest-offers-box-inner">
+                    <div class="latest-offers-box-overflow">
+                      <div class="latest-offers-box-photo"><img class="img-fluid" src="assets/img/tours/aswan.jpeg" alt="latest-offers"></div>
+                      <div class="info">
+                        <div class="price-box-2">6<span>Tours</span></div>
+                        <h3><a href="car-details.html">Aswan</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-pad">
+                <div class="latest-offers-box">
+                  <div class="latest-offers-box-inner">
+                    <div class="latest-offers-box-overflow">
+                      <div class="latest-offers-box-photo"><img class="img-fluid" src="assets/img/tours/cairo.jpeg" alt="latest-offers"></div>
+                      <div class="info">
+                        <div class="price-box-2">6<span>Tours</span></div>
+                        <h3 class="category-title"><a href="car-details.html">Cairo</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12 col-sm-12 col-pad">
+                <div class="latest-offers-box">
+                  <div class="latest-offers-box-inner">
+                    <div class="latest-offers-box-overflow">
+                      <div class="latest-offers-box-photo"><img class="img-fluid" src="assets/img/tours/dahab.jpg" alt="latest-offers"></div>
+                      <div class="info">
+                        <div class="price-box-2">6<span>Tours</span></div>
+                        <h3><a href="car-details.html">Dahab</a></h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12 col-pad">
+            <div class="latest-offers-box">
+              <div class="latest-offers-box-inner">
+                <div class="latest-offers-box-overflow">
+                  <div class="latest-offers-box-photo">
+                    <div class="latest-offers-box-photodd"><img class="img-fluid big-img" src="assets/img/tours/luxor7.jpeg" alt="latest-offers"></div>
+                  </div>
+                  <div class="info">
+                    <div class="price-box-2">6<span>Tours</span></div>
+                    <h3 class="category-title"><a href="car-details.html">Luxor</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest offers section end-->
+    <!-- Counters strat-->
+    <div class="counters-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-box-1"><i class="flaticon-support"></i>
+              <h1 class="counter">967</h1>
+              <h5>local  <span>guides</span></h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-box-1"><i class="flaticon-blog"></i>
+              <h1 class="counter">1276</h1>
+              <h5>Handcrafted <span>experiences</span></h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-box-1"><i class="flaticon-user"></i>
+              <h1 class="counter">96%  </h1>
+              <h5>Happy <span>travelers</span></h5>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter-box-1"><i class="flaticon-medal"></i>
+              <h1 class="counter">177</h1>
+              <h5> award <span>winning</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counters end-->
+    <!-- Testimonial start-->
+    <div class="testimonial-4 content-area-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Main title-->
+            <div class="main-title">
+              <h1>Our Testimonial</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <!-- Slick slider area start-->
+            <div class="slick-slider-area">
+              <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 2, &quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 1}}]}">
+                <div class="slick-slide-item">
+                  <div class="testimonial-info">
+                    <div class="user-section">
+                      <div class="user-thumb"><img src="assets/img/avatar/avatar-1.png" alt="testimonial">
+                        <div class="icon"><i class="fa fa-quote-right"></i></div>
+                      </div>
+                      <div class="user-name">
+                        <h5>Michelle Nelson</h5>
+                        <p>Consultant</p>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <p>&quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slide-item">
+                  <div class="testimonial-info">
+                    <div class="user-section">
+                      <div class="user-thumb"><img src="assets/img/avatar/avatar-2.png" alt="testimonial">
+                        <div class="icon"><i class="fa fa-quote-right"></i></div>
+                      </div>
+                      <div class="user-name">
+                        <h5>Anne Brady</h5>
+                        <p>Web Designer, Uk</p>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <p>&quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="slick-slide-item">
+                  <div class="testimonial-info">
+                    <div class="user-section">
+                      <div class="user-thumb"><img src="assets/img/avatar/avatar-3.png" alt="testimonial">
+                        <div class="icon"><i class="fa fa-quote-right"></i></div>
+                      </div>
+                      <div class="user-name">
+                        <h5>Carolyn Stone</h5>
+                        <p>Designer</p>
+                      </div>
+                    </div>
+                    <div class="text">
+                      <p>&quot;Bitcoin is one of the most important inventions in all of human history. For the first time ever, anyone can send or receive any amount of money .Lorem ipsum dolor sit amet consectetur adipisicing elit.&quot;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimonial end-->
+    <!-- Blog start-->
+    <div class="blog content-area">
+      <div class="container">
+        <!-- Main title-->
+        <div class="main-title">
+          <h1>Our News</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Slick slider area start-->
+        <div class="slick-slider-area clearfix">
+          <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 3, &quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 2}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 1}}]}">
+            <div class="slick-slide-item">
+              <div class="blog-1">
+                <div class="blog-image"><img class="img-fluid bp" src="assets/img/blog/blog-1.png" alt="blog-1">
+                  <div class="date-box"><span>21</span>Feb</div>
+                  <div class="profile-user"><img src="assets/img/avatar/avatar-1.png" alt="user"></div>
+                </div>
+                <div class="detail">
+                  <div class="post-meta clearfix">
+                    <ul>
+                      <li><strong><a href="#">Maria Blank</a></strong></li>
+                      <li class="float-right mr-0"><a href="#"><i class="flaticon-comment"></i></a>17K</li>
+                      <li class="float-right"><a href="#"><i class="flaticon-calendar"></i></a>73k</li>
+                    </ul>
+                  </div>
+                  <h4><a href="blog-details.html">Selling Your Real House</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="blog-1">
+                <div class="blog-image"><img class="img-fluid" src="assets/img/blog/blog-3.png" alt="blog-1">
+                  <div class="date-box"><span>27</span>Feb</div>
+                  <div class="profile-user"><img src="assets/img/avatar/avatar-2.png" alt="user"></div>
+                </div>
+                <div class="detail">
+                  <div class="post-meta clearfix">
+                    <ul>
+                      <li><strong><a href="#">Brandon Miller</a></strong></li>
+                      <li class="float-right mr-0"><a href="#"><i class="flaticon-comment"></i></a>17K</li>
+                      <li class="float-right"><a href="#"><i class="flaticon-calendar"></i></a>73k</li>
+                    </ul>
+                  </div>
+                  <h4><a href="blog-details.html">Find Your Dream Car</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="blog-1">
+                <div class="blog-image"><img class="img-fluid" src="assets/img/blog/blog-1.png" alt="blog-1">
+                  <div class="date-box"><span>25</span>Feb</div>
+                  <div class="profile-user"><img src="assets/img/avatar/avatar-3.png" alt="user"></div>
+                </div>
+                <div class="detail">
+                  <div class="post-meta clearfix">
+                    <ul>
+                      <li><strong><a href="#">Karen Paran</a></strong></li>
+                      <li class="float-right mr-0"><a href="#"><i class="flaticon-comment"></i></a>17K</li>
+                      <li class="float-right"><a href="#"><i class="flaticon-calendar"></i></a>73k</li>
+                    </ul>
+                  </div>
+                  <h4><a href="blog-details.html">Buying a Best Sports Car</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                </div>
+              </div>
+            </div>
+            <div class="slick-slide-item">
+              <div class="blog-1">
+                <div class="blog-image"><img class="img-fluid" src="assets/img/blog/blog-1.png" alt="blog-1">
+                  <div class="date-box"><span>14</span>Nov</div>
+                  <div class="profile-user"><img src="assets/img/avatar/avatar-4.png" alt="user"></div>
+                </div>
+                <div class="detail">
+                  <div class="post-meta clearfix">
+                    <ul>
+                      <li><strong><a href="#">Karen Paran</a></strong></li>
+                      <li class="float-right mr-0"><a href="#"><i class="flaticon-comment"></i></a>17K</li>
+                      <li class="float-right"><a href="#"><i class="flaticon-calendar"></i></a>73k</li>
+                    </ul>
+                  </div>
+                  <h4><a href="blog-details.html">Buying a Best Sports Car</a></h4>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog end-->
+    <div class="partners">
+      <div class="container">
+        <div class="slick-slider-area">
+          <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 5,&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:2000,&quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 3}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 2}}]}">
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-1.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-2.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-3.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-4.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-1.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-2.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-3.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-4.png" alt="brand"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partners end-->
+  </body>
+  <footer class="footer overview-bgi">
+    <div class="container footer-inner">
+      <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix"><img class="f-logo" src="assets/img/logos/Logo-Top-Agency-Travel-1.png" width="30%" height="auto" alt="logo">
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <div class="social-list-2" style="float:none;">
+              <ul>
+                <li><a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter-bg" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="google-bg" href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix">
+            <h4>Contact Info</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <ul class="contact-info">
+              <li><i class="flaticon-pin"></i>Egypt :Red sea , Hurghada Sgaeraton Road , El Hadaba , Building Nr. 9 Flat Nr. 8</li>
+              <li><i class="flaticon-mail"></i><a href="mailto:info@topagencytravel.com">info@topagencytravel.com</a></li>
+              <li><i class="flaticon-phone"></i><a href="tel:+201098563744">+201098563744</a></li>
+              <li><i class="flaticon-fax"></i>+201098563744</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-item">
+            <h4>Useful Links</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <ul class="links">
+              <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+              <li><a href="about.html"><i class="fa fa-angle-right"></i>About Us</a></li>
+              <li><a href="search-tours.html"><i class="fa fa-angle-right"></i>search tours</a></li>
+              <li><a href="tour-page.html"><i class="fa fa-angle-right"></i>Tour Page       </a></li>
+              <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix">
+            <h4>Subscribe</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <div class="Subscribe-box">
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+              <form class="form-inline" action="#" method="GET">
+                <input class="form-control mb-sm-0" id="inlineFormInputName3" type="text" placeholder="Email Address">
+                <button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="copy">© 2021 <a href="#">TopAgencyTravel</a>All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Full Page Search-->
+  <div id="full-page-search">
+    <button class="close" type="button">×</button>
+    <form action="index.html#">
+      <input type="search" value="" placeholder="type keyword(s) here">
+      <button class="btn btn-sm button-theme" type="submit">Search</button>
+    </form>
+  </div>
+  <!-- Car Overview Modal-->
+  <div class="car-model-2">
+    <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog" aria-labelledby="carOverviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="carOverviewModalLabel">
+              <h4>Find Your Dream Car</h4>
+              <h5><i class="flaticon-pin"></i>123 Kathal St. Tampa City,</h5>
+            </div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row modal-raw">
+              <div class="col-lg-6 modal-left">
+                <div class="item active"><img class="img-fluid" src="assets/img/car-11.jpg" alt="best-car">
+                  <div class="sobuz">
+                    <div class="price-box"><span class="del">
+                        <del>$950.00</del></span><br><span class="del-2">$1050.00</span></div>
+                    <div class="ratings-2"><span class="ratings-box">4.5/5</span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>( 7 Reviews )</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 modal-right">
+                <div class="modal-right-content">
+                  <section>
+                    <h3>Features</h3>
+                    <div class="features">
+                      <ul class="bullets">
+                        <li>Cruise Control</li>
+                        <li>Airbags</li>
+                        <li>Air Conditioning</li>
+                        <li>Alarm System</li>
+                        <li>Audio Interface</li>
+                        <li>CDR Audio</li>
+                        <li>Seat Heating</li>
+                        <li>ParkAssist</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>Overview</h3>
+                    <ul class="bullets">
+                      <li>Model</li>
+                      <li>Year</li>
+                      <li>Condition</li>
+                      <li>Price</li>
+                      <li>Audi</li>
+                      <li>2020</li>
+                      <li>Brand New</li>
+                      <li>$178,000</li>
+                    </ul>
+                  </section>
+                  <div class="description">
+                    <h3>Description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard.</p><a class="btn btn-md btn-round btn-theme" href="car-details.html">Show Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-submenu.js"></script>
+  <script src="assets/js/rangeslider.js"></script>
+  <script src="assets/js/jquery.mb.YTPlayer.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.scrollUp.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/dropzone.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.filterizr.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.countdown.js"></script>
+  <script src="assets/js/jquery.mousewheel.min.js"></script>
+  <script src="assets/js/lightgallery-all.js"></script>
+  <script src="assets/js/jnoty.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/app.js"></script>
+</html>

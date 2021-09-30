@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> About Us </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-submenu.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/fonts/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href="assets/fonts/linearicons/style.css" rel="stylesheet">
+    <link href="assets/css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="assets/css/dropzone.css" rel="stylesheet">
+    <link href="assets/css/slick.css" rel="stylesheet">
+    <link href="assets/css/lightbox.min.css" rel="stylesheet">
+    <link href="assets/css/jnoty.css" rel="stylesheet">
+    <link href="assets/css/sidebar.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/skins/default.css" id="style_sheet" rel="stylesheet">
+    <link href="assets/css/custom.css" id="style_sheet" rel="stylesheet">
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet">
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
+    <div class="page_loader"></div>
+    <!-- Top header start-->
+    <header class="top-header bg-active" id="top-header-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-sm-7">
+            <div class="list-inline"><a href="#"><i class="fa fa-facebook"> </i></a><a href="#"><i class="fa fa-twitter"> </i></a><a href="#"><i class="fa fa-linkedin">  </i></a><a href="tel:1-8X0-666-8X88"><i class="fa fa-phone"></i>Need Support? 1-8X0-666-8X88</a><a href="tel:info@topagencytravel.com"><i class="fa fa-envelope"></i>info@topagencytravel.com</a></div>
+          </div>
+          <div class="col-lg-6 col-md-4 col-sm-5">
+            <ul class="top-social-media register-login-model pull-right">
+              <li><a class="nav-link" href="#login" data-toggle="modal"><i class="fa fa-sign-in"></i>Login</a></li>
+              <li><a class="nav-link" href="#register" data-toggle="modal"><i class="fa fa-user-plus"></i>Register</a></li>
+              <!-- Login Modal-->
+            </ul>
+            <div class="modal fade" id="login">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content form-wrapper">
+                  <div class="close-box" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></div>
+                  <div class="container-fluid mt-5">
+                    <form id="LoginForm" method="get">
+                      <div class="form-group text-center">
+                        <h4>Login Form</h4>
+                      </div>
+                      <div class="form-group " style="position: relative;">
+                        <label class="d-flex" for="l_email"> 
+                          <input class="form-control" type="email" id="l_email" placeholder="username" required><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group pb-3" style="position: relative;">
+                        <label class="d-flex" for="l_password"> 
+                          <input class="form-control" type="password" id="l_password" placeholder="Pawswword ?" required><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </label><a href="#forgotPassword" style="display:block; position: absolute; right: 0;" title="Fill Email Field and Click it">Forgot Password?</a>
+                      </div>
+                      <div class="form-group pt-2">
+                        <button class="btn btn-info form-control">Login</button>
+                      </div>
+                      <div class="text-center pt-2 social-login">
+                        <h6>OR Continue with</h6><a class="google" href="#"><i class="fa fa-google-plus fa-lg"></i></a><a class="facebook" href="#"><i class="fa fa-facebook fa-lg"></i></a><a class="twitter" href="#"><i class="fa fa-twitter fa-lg"></i></a><a class="github" href="#"><i class="fa fa-github fa-lg"></i></a>
+                        <!-- Registeration Modal-->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal fade" id="register">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content form-wrapper">
+                  <div class="close-box" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></div>
+                  <div class="container-fluid mt-5">
+                    <form id="RegisterationForm" action="#" method="post">
+                      <div class="form-group text-center pb-2">
+                        <h4>Registration Form</h4>
+                      </div>
+                      <div class="form-group " style="position: relative;">
+                        <label class="d-flex" for="l_user"> 
+                          <input class="form-control" type="text" id="l_user" placeholder="username" required><i class="fa fa-user" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group" style="position: relative;">
+                        <label class="d-flex" for="l_email"> 
+                          <input class="form-control" type="email" id="l_email" placeholder="Email" required><i class="fa fa-envelope" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group" style="position: relative;">
+                        <label class="d-flex" for="l_password"> 
+                          <input class="form-control" type="password" id="l_password" placeholder="Pawswword ?" required><i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                        </label>
+                      </div>
+                      <div class="form-group pb-3" style="position: relative;">
+                        <label class="d-flex" for="l_cpassowrd"> 
+                          <input class="form-control" type="cpassword" id="l_cpassowrd" placeholder="Confirm Password" required><i class="fa fa-unlock-alt" aria-hidden="true">       </i>
+                        </label>
+                      </div><a href="#" data-toggle="modal" data-target="#login" style="display:none; position: absolute; right: 0; font-size: 12px;">That&apos; | | you? Login</a>
+                      <div class="form-group">
+                        <button class="btn btn-info form-control">Register</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Top header end-->
+    <!-- Main header start-->
+    <header class="main-header  sh-2">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand company-logo-2" href="index.html"><img src="assets/img/logos/Logo-Top-Agency-Travel-1.png" alt="logo"></a>
+          <button class="navbar-toggler" id="drawer" type="button"><span class="fa fa-bars"></span></button>
+          <div class="navbar-collapse collapse w-100" id="navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item dropdown"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="about.html">About                       </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="search-tours.html">Tours     </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="tour-page.html">Tour Details           </a></li>
+              <li class="nav-item dropdown"><a class="nav-link" href="contact.html">conact us            </a></li>
+              <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="index.html">English </a></li>
+                  <li><a class="dropdown-item" href="arabic/index.html">العربية    </a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> 
+              <li class="nav-item dropdown"><a class="nav-link h-icon" href="#full-page-search"><i class="fa fa-search"></i></a></li>
+              <li class="nav-item dropdown" href="#" data-toggle="dropdown-cart" role="button" aria-expanded="false">
+                <button class="nav-link h-icon" id="dropdownMenuButton" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i><span class="count-number">5  </span></button>
+                <div class="dropdown-menu dropdown-cart" role="menu" style="width:250px">
+                  <div class="card">
+                    <div class="card-body"> 
+                      <h1 class="card-heading">Your Cart</h1>
+                      <div class="card-item">
+                        <div class="media">
+                          <div class="media-image"><img src="https://topagencytravel.com/wp-content/uploads/2020/03/ytrrrr-1-70x70.jpg"></div>
+                          <div class="media-info">
+                            <h5>4 days to egypt </h5>
+                            <div class="price">price <span class="price-span">10.000 $</span></div>
+                          </div><a class="card-delete" href="#"><i class="fa fa-trash"></i></a>
+                        </div>
+                      </div>
+                      <div class="card-total">
+                        <div class="price">price <span class="price-span">10.000 $</span></div><a class="btn btn-block btn-default" href="shop-checkout.html"> Checkout</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Main header end-->
+    <nav class="nav-sidebar" id="sidebar">
+      <!-- Close btn-->
+      <div id="dismiss"><i class="fa fa-close"></i></div>
+      <div class="sidebar-inner">
+        <div class="sidebar-logo"><a href="index.html"><img src="assets/img/logos/Logo-Top-Agency-Travel-1.png" alt="sidebarlogo"></a></div>
+        <div class="sidebar-navigation">
+          <ul class="menu-list">
+            <li class="nav-item dropdown"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="about.html">About                       </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="search-tours.html">Tours     </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="tour-page.html">Tour Details           </a></li>
+            <li class="nav-item dropdown"><a class="nav-link" href="contact.html">contact us  </a></li>
+            <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="arabic/index.html">العربية  </a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="get-in-touch">
+          <h3 class="heading">Get in Touch</h3>
+          <div class="media"><i class="flaticon-phone"></i>
+            <div class="media-body"><a href="tel:0477-0477-8556-552">0477 8556 552</a></div>
+          </div>
+          <div class="media"><i class="flaticon-mail"></i>
+            <div class="media-body"><a href="#">info@themevessel.com</a></div>
+          </div>
+          <div class="media mb-0"><i class="flaticon-earth"></i>
+            <div class="media-body"><a href="#">info@themevessel.com</a></div>
+          </div>
+        </div>
+        <div class="get-social">
+          <h3 class="heading">Get Social</h3><a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a><a class="twitter-bg" href="#"><i class="fa fa-twitter"></i></a><a class="google-bg" href="#"><i class="fa fa-google"></i></a><a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </nav>
+    <div class="sub-banner">
+      <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+          <h1>About Us</h1>
+          <ul class="breadcrumbs">
+            <li><a href="index.html">Home</a></li>
+            <li class="active">About Us</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="about-car">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="about-text">
+              <h3>Welcome to Auto Car</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</p>
+              <p class="mb-0">electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.But also the leap into electronic typesetting</p>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="about-slider-box simple-slider">
+              <div class="slick-slider-area">
+                <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 1, &quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:2000, &quot;dots&quot;: true, &quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 1}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 1}}]}">
+                  <div class="slick-slide-item"><img class="d-block w-100" src="assets/img/tours/luxor-3.jpeg" alt="about"></div>
+                  <div class="slick-slide-item"><img class="d-block w-100" src="assets/img/tours/luxor-4.jpeg" alt="about"></div>
+                  <div class="slick-slide-item"><img class="d-block w-100" src="assets/img/tours/luxor-5.jpeg" alt="about"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service section start-->
+    <div class="service-section content-area-2">
+      <div class="container">
+        <!-- Main title-->
+        <div class="main-title text-center">
+          <h1>We Are The Best</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="service-info-2">
+              <div class="icon"><i class="flaticon-shield"></i></div>
+              <div class="detail">
+                <h3>Highly  Secured</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet</p><a class="read-more" href="services.html">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="service-info-2">
+              <div class="icon"><i class="flaticon-deal"></i></div>
+              <div class="detail">
+                <h3>Trusted Agents</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet</p><a class="read-more" href="services.html">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="service-info-2">
+              <div class="icon"><i class="flaticon-money"></i></div>
+              <div class="detail">
+                <h3>Get an Offer</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet</p><a class="read-more" href="services.html">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="service-info-2">
+              <div class="icon"><i class="flaticon-support-2"></i></div>
+              <div class="detail">
+                <h3>Free Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus tincidunt Lorem ipsum dolor sit amet</p><a class="read-more" href="services.html">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12 text-center"><a class="btn-4" href="services.html"><span>Learn More</span><i class="arrow"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- Service section end-->
+    <div class="partners">
+      <div class="main-title text-center">
+        <h1>Thanks To Our Best Clients</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+      </div>
+      <div class="container">
+        <div class="slick-slider-area">
+          <div class="row slick-carousel" data-slick="{&quot;slidesToShow&quot;: 5,&quot;autoplay&quot;:true,&quot;autoplaySpeed&quot;:2000, &quot;responsive&quot;:[{&quot;breakpoint&quot;: 1024,&quot;settings&quot;:{&quot;slidesToShow&quot;: 3}}, {&quot;breakpoint&quot;: 768,&quot;settings&quot;:{&quot;slidesToShow&quot;: 2}}]}">
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-1.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-2.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-3.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-4.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-1.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-2.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-3.png" alt="brand"></div>
+            <div class="slick-slide-item"><img class="img-fluid" src="assets/img/brand/brand-4.png" alt="brand"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Partners end-->
+    <!-- Service section start-->
+  </body>
+  <footer class="footer overview-bgi">
+    <div class="container footer-inner">
+      <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix"><img class="f-logo" src="assets/img/logos/Logo-Top-Agency-Travel-1.png" width="30%" height="auto" alt="logo">
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <div class="social-list-2" style="float:none;">
+              <ul>
+                <li><a class="facebook-bg" href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter-bg" href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="google-bg" href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a class="linkedin-bg" href="#"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix">
+            <h4>Contact Info</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <ul class="contact-info">
+              <li><i class="flaticon-pin"></i>Egypt :Red sea , Hurghada Sgaeraton Road , El Hadaba , Building Nr. 9 Flat Nr. 8</li>
+              <li><i class="flaticon-mail"></i><a href="mailto:info@topagencytravel.com">info@topagencytravel.com</a></li>
+              <li><i class="flaticon-phone"></i><a href="tel:+201098563744">+201098563744</a></li>
+              <li><i class="flaticon-fax"></i>+201098563744</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-item">
+            <h4>Useful Links</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <ul class="links">
+              <li><a href="#"><i class="fa fa-angle-right"></i>Home</a></li>
+              <li><a href="about.html"><i class="fa fa-angle-right"></i>About Us</a></li>
+              <li><a href="search-tours.html"><i class="fa fa-angle-right"></i>search tours</a></li>
+              <li><a href="tour-page.html"><i class="fa fa-angle-right"></i>Tour Page       </a></li>
+              <li><a href="contact.html"><i class="fa fa-angle-right"></i>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-item clearfix">
+            <h4>Subscribe</h4>
+            <div class="s-border"></div>
+            <div class="m-border"></div>
+            <div class="Subscribe-box">
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+              <form class="form-inline" action="#" method="GET">
+                <input class="form-control mb-sm-0" id="inlineFormInputName3" type="text" placeholder="Email Address">
+                <button class="btn" type="submit"><i class="fa fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <p class="copy">© 2021 <a href="#">TopAgencyTravel</a>All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Full Page Search-->
+  <div id="full-page-search">
+    <button class="close" type="button">×</button>
+    <form action="index.html#">
+      <input type="search" value="" placeholder="type keyword(s) here">
+      <button class="btn btn-sm button-theme" type="submit">Search</button>
+    </form>
+  </div>
+  <!-- Car Overview Modal-->
+  <div class="car-model-2">
+    <div class="modal fade" id="carOverviewModal" tabindex="-1" role="dialog" aria-labelledby="carOverviewModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="carOverviewModalLabel">
+              <h4>Find Your Dream Car</h4>
+              <h5><i class="flaticon-pin"></i>123 Kathal St. Tampa City,</h5>
+            </div>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row modal-raw">
+              <div class="col-lg-6 modal-left">
+                <div class="item active"><img class="img-fluid" src="assets/img/car-11.jpg" alt="best-car">
+                  <div class="sobuz">
+                    <div class="price-box"><span class="del">
+                        <del>$950.00</del></span><br><span class="del-2">$1050.00</span></div>
+                    <div class="ratings-2"><span class="ratings-box">4.5/5</span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>( 7 Reviews )</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 modal-right">
+                <div class="modal-right-content">
+                  <section>
+                    <h3>Features</h3>
+                    <div class="features">
+                      <ul class="bullets">
+                        <li>Cruise Control</li>
+                        <li>Airbags</li>
+                        <li>Air Conditioning</li>
+                        <li>Alarm System</li>
+                        <li>Audio Interface</li>
+                        <li>CDR Audio</li>
+                        <li>Seat Heating</li>
+                        <li>ParkAssist</li>
+                      </ul>
+                    </div>
+                  </section>
+                  <section>
+                    <h3>Overview</h3>
+                    <ul class="bullets">
+                      <li>Model</li>
+                      <li>Year</li>
+                      <li>Condition</li>
+                      <li>Price</li>
+                      <li>Audi</li>
+                      <li>2020</li>
+                      <li>Brand New</li>
+                      <li>$178,000</li>
+                    </ul>
+                  </section>
+                  <div class="description">
+                    <h3>Description</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard.</p><a class="btn btn-md btn-round btn-theme" href="car-details.html">Show Detail</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/jquery-2.2.0.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap-submenu.js"></script>
+  <script src="assets/js/rangeslider.js"></script>
+  <script src="assets/js/jquery.mb.YTPlayer.js"></script>
+  <script src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.scrollUp.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="assets/js/dropzone.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/jquery.filterizr.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.countdown.js"></script>
+  <script src="assets/js/jquery.mousewheel.min.js"></script>
+  <script src="assets/js/lightgallery-all.js"></script>
+  <script src="assets/js/jnoty.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+  <script src="assets/js/app.js"></script>
+</html>

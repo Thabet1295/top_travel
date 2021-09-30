@@ -1,0 +1,504 @@
+extend index
+block website_title 
+    title  تفاصيل الرحلة  
+block index
+    div(class="sub-banner")
+        div(class="container breadcrumb-area")
+            div(class="breadcrumb-areas")
+                h1 تفاصيل الرحلة 
+                ul(class="breadcrumbs")
+                    li
+                        a(href="index.html") الرئيسية
+                    li(class="active") تفاصيل الرحلة 
+    div(class="car-details-page content-area")
+        div(class="container")
+            div(class="row")
+                div(class="col-lg-8 col-md-12 col-xs-12")
+                    div(class="car-details-section")
+                        #carDetailsSlider(class="carousel car-details-sliders slide mb-40" dir="ltr")
+                            // main slider carousel items
+                            div(class="carousel-inner")
+                                div(class="active item carousel-item", data-slide-number="0")
+                                    img(src="../assets/img/tours/luxor-3.jpeg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="1")
+                                    img(src="../assets/img/tours/luxor-4.jpeg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="2")
+                                    img(src="../assets/img/tours/luxor-5.jpeg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="4")
+                                    img(src="../assets/img/tours/luxor-4.jpeg", class="img-fluid", alt="slider-car")
+                                div(class="item carousel-item", data-slide-number="5")
+                                    img(src="../assets/img/tours/luxor-7.jpeg", class="img-fluid", alt="slider-car")
+                            // main slider carousel nav controls
+                            div(class="carousel-indicators-section clearfix")
+                                ul(class="carousel-indicators car-properties list-inline nav nav-justified")
+                                    li(class="list-inline-item active")
+                                        a#carousel-selector-0(class="selected", data-slide-to="0", data-target="#carDetailsSlider")
+                                            img(src="../assets/img/tours/luxor-3.jpeg", class="img-fluid car-image", alt="small-car")
+                                    li(class="list-inline-item")
+                                        a#carousel-selector-1(data-slide-to="1", data-target="#carDetailsSlider")
+                                            img(src="../assets/img/tours/luxor-4.jpeg", class="img-fluid car-image", alt="small-car")
+                                    li(class="list-inline-item")
+                                        a#carousel-selector-2(data-slide-to="2", data-target="#carDetailsSlider")
+                                            img(src="../assets/img/tours/luxor-5.jpeg", class="img-fluid car-image", alt="small-car")
+                                    li(class="list-inline-item")
+                                        a#carousel-selector-3(data-slide-to="3", data-target="#carDetailsSlider")
+                                            img(src="../assets/img/tours/luxor-4.jpeg", class="img-fluid car-image", alt="small-car")
+                                    li(class="list-inline-item")
+                                        a#carousel-selector-4(data-slide-to="4", data-target="#carDetailsSlider")
+                                            img(src="../assets/img/tours/luxor-7.jpeg", class="img-fluid car-image", alt="small-car")
+                            div(class="heading-car-2")
+                                h3 4 يوم: القاهرة والإسكندرية استراحة قصيرة تبدأ من
+                                div(class="price-location")
+                                    span(class="car-price") $410
+                                    span(class="location")
+                                        i(class="flaticon-pin")
+                                        | القاهرة والإسكندرية
+                        // Advanced search start
+                        div(class="widget-2 advanced-search bg-grea-2 as-2")
+                            h3(class="sidebar-title") from 
+                                strong $410,00
+                            div(class="s-border")
+                            div(class="m-border")
+                            
+                        // Description start
+                        div(class="features mb-50")
+                            h3(class="heading-2") المميزات 
+                            div(class="row")
+                                div(class=" col-lg-3 col-xs-12")
+                                    div(class="item")
+                                        div(class="icon")
+                                            i(class="fa  fa-calendar-check-o")
+                                        div(class="info")
+                                            h4 المدة 
+                                            p 4 ايام
+                                div(class=" col-lg-3 col-xs-12")
+                                    div(class="item")
+                                        div(class="icon")
+                                            i(class="fa fa-globe")
+                                        div(class="info")
+                                            h4 نوع الرحلة
+                                            p رحلة خاصة
+                                div(class=" col-lg-3 col-xs-12")
+                                    div(class="item")
+                                        div(class="icon")
+                                            i(class="fa fa-users")
+                                        div(class="info")
+                                            h4 عدد الافراد
+                                            p غير محدود
+                                div(class=" col-lg-3 col-xs-12")
+                                    div(class="item")
+                                        div(class="icon")
+                                            i(class="fa fa-language")
+                                        div(class="info")
+                                            h4 اللغات 
+                                            p 2 لغة                                   
+                        div(class="Description mb-50")
+                            h3(class="heading-2") نبذة عامة
+                            p جولات إجازات قصيرة بالقاهرة لمدة 4 أيام في القاهرة والإسكندرية مصر خذ استراحة للقاهرة واختبر عظمة القاهرة والإسكندرية واكتشف المواقع المصرية القديمة
+                        // Car amenities start
+                        div(class="car-amenities mb-30")
+                            h3(class="heading-2") المتاح / غير متاح
+                            div(class="row")
+                                div(class="col-lg-7 col-md-7 col-sm-7 col-xs-12")
+                                    ul(class="amenities")
+                                        li
+                                            i(class="fa fa-check")
+                                            | تلبية ومساعدة الخدمة عند وصول المغادرة
+                                        li
+                                            i(class="fa fa-check")
+                                            | جميع عمليات النقل بسيارة فاخرة حديثة ومكيفة الهواء
+                                        li
+                                            i(class="fa fa-check")
+                                            | الإقامة على متن رحلة بحرية 5 نجوم على أساس إقامة كاملة
+                                        li
+                                            i(class="fa fa-check")
+                                            | جميع رحلات النيل كروز كما هو مذكور في خط سير الرحلة
+                                        li
+                                            i(class="fa fa-check")
+                                            | رسوم الدخول إلى
+                                        li
+                                            i(class="fa fa-check")
+                                            | رسوم الدخول لجميع المعالم السياحية بين أسوان وأبو سمبل   
+                                div(class="col-lg-4 col-md-4 col-sm-4 col-xs-12")
+                                    ul(class="amenities")
+                                        li
+                                            i(class="fa fa-times")
+                                            | رسوم خدمة الدليل 
+                                        li
+                                            i(class="fa fa-times")
+                                            | رسوم خدمة السائق
+                                        li
+                                            i(class="fa fa-times")
+                                            | أي مصاريف خاصة
+                                        li
+                                            i(class="fa fa-times")
+                                            | رسوم خدمة الغرف
+                        // Inside car start
+                        div(class="Itinerary")
+                            h3(class="heading-2") خط سير الرحلة 
+                            #accordion(class="accordion") 
+                                div(class="card mb-0")
+                                    div(class="card-header collapsed", data-toggle="collapse", href="#collapseOne")
+                                        a(class="card-title")
+                                        | اليوم الأول: الوصول إلى القاهرة - مرحبًا بكم في أرض الفراعنة
+                                    #collapseOne(class="card-body collapse", data-parent="#accordion")
+                                        p
+                                        | مرحبًا بكم في القاهرة ، مصر (على مدار الساعة)
+                                        | سيلتقي بك مدير رحلتك ويساعدك في مطار القاهرة الدولي (إجراءات الوصول) وبعد ذلك سيرافقك إلى | فندق بسيارة فاخرة حصرية مكيفة الهواء. في  الفندق ، سيساعدك مدير الرحلة في إجراء تسجيل وصول سلس ومراجعة بياناتك
+                                        | خط سير الرحلة معك لتحديد وتأكيد أوقات الاستلام لكل جولة. بين عشية وضحاها في القاهرة
+                                        | مشروب ترحيب
+                                    div(class="card-header collapsed", data-toggle="collapse", data-parent="#accordion", href="#collapseTwo")
+                                        a(class="card-title")
+                                        | يوم 2: مصر بيراميدز تو
+                                    #collapseTwo(class="card-body collapse", data-parent="#accordion")
+                                        p
+                                        | مرحبًا بكم في القاهرة ، مصر (على مدار الساعة)
+                                        | سيلتقي بك مدير رحلتك ويساعدك في مطار القاهرة الدولي (إجراءات الوصول) وبعد ذلك سيرافقك إلى | فندق بسيارة فاخرة حصرية مكيفة الهواء. في  الفندق ، سيساعدك مدير الرحلة في إجراء تسجيل وصول سلس ومراجعة بياناتك
+                                        | خط سير الرحلة معك لتحديد وتأكيد أوقات الاستلام لكل جولة. بين عشية وضحاها في القاهرة
+                                        | مشروب ترحيب
+                                    div(class="card-header collapsed", data-toggle="collapse", data-parent="#accordion", href="#collapseThree")
+                                        a(class="card-title")
+                                        | يوم 3: مصر بيراميدز تو
+                                    #collapseThree(class="card-body collapse", data-parent="#accordion")
+                                        p
+                                        | مرحبًا بكم في القاهرة ، مصر (على مدار الساعة)
+                                        | سيلتقي بك مدير رحلتك ويساعدك في مطار القاهرة الدولي (إجراءات الوصول) وبعد ذلك سيرافقك إلى | فندق بسيارة فاخرة حصرية مكيفة الهواء. في  الفندق ، سيساعدك مدير الرحلة في إجراء تسجيل وصول سلس ومراجعة بياناتك
+                                        | خط سير الرحلة معك لتحديد وتأكيد أوقات الاستلام لكل جولة. بين عشية وضحاها في القاهرة
+                                        | مشروب ترحيب
+
+
+                        div(class="inside-car mb-50")
+                            h3(class="heading-2") فيديو عن الرحلة
+                            iframe(src="https://www.youtube.com/embed/V7IrnC9MISU", allowfullscreen="")
+                        // location start
+                        div(class="location mb-50")
+                            div(class="map")
+                                h3(class="heading-2") موقع الرحلة علي الخريطة
+                                div(class="mapouter")
+                                    div(class="gmap_canvas")
+                                        iframe(width="600", height="500", id="gmap_canvas", src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed", frameborder="0", scrolling="no", marginheight="0", marginwidth="0")
+                                        a(href="https://www.whatismyip-address.com")
+                                        br
+                                        style.
+                                            .mapouter{position:relative;text-align:right;height:500px;width:600px;}
+                                        style.
+                                            .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}
+
+                div(class="col-lg-4 col-md-12")
+                    div(class="sidebar-right")
+                        div(class="widget-head")
+                            div(class="price")
+                                span(class="label") تبدأ من  
+                                span(class="value") $420
+                        // Advanced search start
+                        div(class="widget advanced-search d-none-992")
+
+                            form#form-booking-inpage(method="get", class="tour-booking-form")
+                                div(class="data-info")
+                                    div(class="form-data")
+                                        h4 التاريخ 
+                                        p 23/10/2021
+                                    div(class="form-icon")
+                                        i(class="fa fa-angle-down arrow")
+                                div(class="form-group")
+                                    div(class="form-input")
+                                        div(class="input-label")
+                                            h4 الكبار 
+                                            p 18+
+                                        div(class="input-value")
+                                            div(class="input-group input-number")
+
+                                                button(class="btn  quantity-down", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+                                                    i(class="fa fa-minus")
+                                                input(class="form-control pos_quantity input_number input_quantity", type="number", value="1", name="products" min="0")
+                                                button(class="btn  quantity-up", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+                                                    i(class="fa fa-plus")
+                                div(class="form-group")
+                                    div(class="form-input")
+                                        div(class="input-label")
+                                            h4 الاطفال  
+                                            p 6-9,10
+                                        div(class="input-value")
+                                            div(class="input-group input-number")
+
+                                                button(class="btn  quantity-down", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+                                                    i(class="fa fa-minus")
+                                                input(class="form-control pos_quantity input_number input_quantity", type="number", value="1", name="products" min="0")
+                                                button(class="btn  quantity-up", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+                                                    i(class="fa fa-plus")
+                                div(class="form-group")
+                                    div(class="form-input")
+                                        div(class="input-label")
+                                            h4 رضيع 
+                                            p 0
+                                        div(class="input-value")
+                                            div(class="input-group input-number")
+
+                                                button(class="btn  quantity-down", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+                                                    i(class="fa fa-minus")
+                                                input(class="form-control pos_quantity input_number input_quantity", type="number", value="1", name="products" min="0")
+                                                button(class="btn  quantity-up", type="button" onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+                                                    i(class="fa fa-plus")                    
+                                div(clsss="submit-group")
+                                    button(class="btn button-theme btn-md btn-block submit-button", type="submit") حجز الان
+                        // Question start
+                        div(class="widget question widget-3")
+                            h5(class="sidebar-title") هل لديك اسئلة ؟
+                            div(class="s-border")
+                            div(class="m-border")
+                            ul(class="contact-info")
+                                li
+                                    i(class="flaticon-pin")
+                                    | Egypt :Red sea , Hurghada Sgaeraton Road , El Hadaba , Building Nr. 9 Flat Nr. 8
+                                li
+                                    i(class="flaticon-mail")
+                                    a(href="mailto:info@themevessel.com") info@topagencytravel.com
+                                li
+                                    i(class="flaticon-phone")
+                                    a(href="tel:+0477-85x6-552") 201098563744
+                            div(class="social-list clearfix")
+                                ul
+                                    li
+                                        a(href="#", class="facebook-bg")
+                                            i(class="fa fa-facebook")
+                                    li
+                                        a(href="#", class="twitter-bg")
+                                            i(class="fa fa-twitter")
+                                    li
+                                        a(href="#", class="google-bg")
+                                            i(class="fa fa-google-plus")
+                                    li
+                                        a(href="#", class="rss-bg")
+                                            i(class="fa fa-rss")
+                                    li
+                                        a(href="#", class="linkedin-bg")
+                                            i(class="fa fa-linkedin")
+                        // Financing calculator start
+                        //- div(class="contact-2 financing-calculator widget widget-3")
+                        //-     h3(class="sidebar-title") Financing Calculator
+                        //-     div(class="s-border")
+                        //-     div(class="m-border")
+                        //-     form(action="#", method="GET", enctype="multipart/form-data")
+                        //-         div(class="form-group")
+                        //-             label(class="form-label") Price
+                        //-             input(type="text", class="form-control", placeholder="$24.400")
+                        //-         div(class="form-group")
+                        //-             label(class="form-label") Interest Rate (%)
+                        //-             input(type="text", class="form-control", placeholder="12%")
+                        //-         div(class="form-group")
+                        //-             label(class="form-label") Period In Months
+                        //-             input(type="text", class="form-control", placeholder="6 Months")
+                        //-         div(class="form-group")
+                        //-             label(class="form-label") Down PaymenT
+                        //-             input(type="text", class="form-control", placeholder="$32,300")
+                        //-         div(class="form-group mb-0")
+                        //-             button(type="submit", class="btn button-theme btn-md btn-block") Cauculate
+                        // Related cars start
+            div(class="related-cars")
+                h3(class="heading-2") رحلات مشابهة
+                div(class="slick-slider-area")
+                    div(class="row slick-carousel",dir="ltr" data-slick='{"slidesToShow": 3, "responsive":[{"breakpoint": 1024,"settings":{"slidesToShow": 2}}, {"breakpoint": 768,"settings":{"slidesToShow": 1}}]}')
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+                        div(class="slick-slide-item")
+                            div(class="car-box")
+                                div(class="car-image")
+                                    img(class="d-block w-100", src="../assets/img/tours/luxor7.jpeg", alt="car-photo")
+                                    div(class="tag") مميزة
+                                    div(class="facilities-list clearfix")
+                                        ul
+                                            li
+                                                i(class="flaticon-calendar-1")
+                                                |  ايام 4  
+                                            li
+                                                i(class="flaticon-way")
+                                                | رحلة يومية
+                                            li
+                                                i(class="fa fa-users")
+                                                | غير محدود
+                                div(class="detail")
+                                    h1(class="title")
+                                        a(href="tour-page.html")   من القاهرة للاقصر بالطائرة   
+                                    div(class="location")
+                                        a(href="tour-page.html")
+                                            i(class="flaticon-pin")
+                                            | القاهرة - الاقصر
+                                div(class="footer clearfix")
+                                    div(class="pull-left ratings")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star")
+                                        i(class="fa fa-star-o")
+                                        span (65 مراجعات)
+                                    div(class="pull-right")
+                                        p(class="price") $850.00
+
+
+                    div(class="slick-prev slick-arrow-buton")
+                        i(class="fa fa-angle-left")
+                    div(class="slick-next slick-arrow-buton")
+                        i(class="fa fa-angle-right")

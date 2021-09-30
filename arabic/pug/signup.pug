@@ -1,0 +1,54 @@
+doctype html
+html
+    head
+        block website_title
+            title Login
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(charset="utf-8")
+        include ./include/style
+    body
+        div(class="contact-section")
+            div(class="container")
+                div(class="row login-box")
+                    div(class="col-lg-6 align-self-center pad-0")
+                        div(class="form-section clearfix")
+                            div(class="logo-2 logo-3")
+                                a(href="index.html")
+                                    img(src="assets/img/logos/black-logo.png", alt="logo")
+                            h3 Create an account
+                            div(class="btn-section clearfix")
+                                a(href="login.html", class="link-btn active btn-1 default-bg") Login
+                                a(href="signup.html", class="link-btn btn-2 active-bg") Register
+                            div(class="clearfix")
+                            form(action="#", method="GET")
+                                div(class="form-group form-box")
+                                    input(type="email", name="email", class="input-text", placeholder="Full Name")
+                                div(class="form-group form-box")
+                                    input(type="email", name="email", class="input-text", placeholder="Email Address")
+                                div(class="form-group form-box clearfix")
+                                    input(type="password", name="Password", class="input-text", placeholder="Password")
+                                div(class="form-group clearfix mb-0")
+                                    button(type="submit", class="btn-md btn-theme float-left") Register
+                    div(class="col-lg-6 align-self-center pad-0 bg-img")
+                        div(class="info clearfix")
+                            div(class="logo-2")
+                                a(href="index.html")
+                                    img(src="assets/img/logos/logo.png", alt="logo")
+                            h3 Welcome to Logdy
+                            div(class="social-list")
+                                a(href="#", class="facebook-bg")
+                                    i(class="fa fa-facebook")
+                                a(href="#", class="twitter-bg")
+                                    i(class="fa fa-twitter")
+                                a(href="#", class="google-bg")
+                                    i(class="fa fa-google")
+                                a(href="#", class="linkedin-bg")
+                                    i(class="fa fa-linkedin")
+
+                // Full Page Search
+        #full-page-search
+            button(type="button", class="close") ×
+            form(action="index.html#")
+                input(type="search", value="", placeholder="type keyword(s) here")
+                button(type="submit", class="btn btn-sm button-theme") Search
+        include ./include/script        
