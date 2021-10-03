@@ -313,6 +313,9 @@ body {
 .video-bg {
   overflow: hidden;
 }
+.video-bg iframe {
+  width: 100% !important;
+}
 
 .btn-3 {
   margin: 0px 10px;

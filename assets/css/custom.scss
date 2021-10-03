@@ -383,6 +383,10 @@ body{
 } 
 .video-bg 
 {
+    iframe
+    {
+        width: 100% !important;
+    }
 
     overflow: hidden;
 }
